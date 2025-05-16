@@ -1,0 +1,35 @@
+{
+  "name": "shadow-dom-survey",
+  "version": "1.0.0",
+  "description": "A complete survey system with builder and reader components, built with Shadow DOM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests configured\"",
+    "minify:builder": "terser builder-embed/builder-embed.js -o builder-embed/builder-embed.min.js",
+    "minify:reader": "terser reader-embed/reader-embed.js -o reader-embed/reader-embed.min.js",
+    "minify": "npm run minify:builder && npm run minify:reader",
+    "build": "npm run minify"
+  },
+  "keywords": [
+    "survey",
+    "webcomponents",
+    "shadowdom",
+    "form",
+    "builder",
+    "reader",
+    "rtl"
+  ],
+  "author": "MAJED AL-ANAZI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKoRSA/shadow-dom-survey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SKoRSA/shadow-dom-survey/issues"
+  },
+  "homepage": "https://github.com/SKoRSA/shadow-dom-survey#readme",
+  "devDependencies": {
+    "terser": "^5.16.1"
+  }
+}

@@ -1,0 +1,35 @@
+# Development files
+.vscode/
+.github/
+*.log
+*.swp
+*.swo
+
+# Test files
+test/
+coverage/
+.nyc_output/
+
+# Build tools
+.travis.yml
+.eslintrc
+.eslintignore
+.prettierrc
+.prettierignore
+
+# Git files
+.git/
+.gitignore
+
+# Documentation
+docs/
+*.md
+!README.md
+!LICENSE
+
+# Examples - exclude from npm but include basic example
+examples/*
+!examples/basic-usage.html
+
+# Build source files
+node_modules/ 
