@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow DOM Survey - Basic Example</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        background-color: #f3f4f6;
+        color: #1f2937;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .header h1 {
+        color: #4f46e5;
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        color: #6b7280;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .language-toggle {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      .language-button {
+        padding: 8px 16px;
+        margin: 0 5px;
+        border: 1px solid #d1d5db;
+        border-radius: 4px;
+        background: white;
+        cursor: pointer;
+        font-weight: 500;
+      }
+
+      .language-button.active {
+        background-color: #4f46e5;
+        color: white;
+        border-color: #4f46e5;
+      }
+
+      h2 {
+        color: #1f2937;
+        border-bottom: 1px solid #e5e7eb;
+        padding-bottom: 10px;
+        margin-top: 0;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .footer a {
+        color: #4f46e5;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Shadow DOM Survey Components</h1>
+      <p>A simple example of the survey builder and reader components</p>
+
+      <div class="language-toggle">
+        <button id="en-button" class="language-button">English</button>
+        <button id="ar-button" class="language-button active">العربية</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h2 id="builder-title">Survey Builder</h2>
+        <div id="survey-builder"></div>
+      </div>
+
+      <div class="card">
+        <h2 id="reader-title">Survey Reader</h2>
+        <div id="survey-reader"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p><a href="../index.html">← Back to main page</a></p>
+    </div>
+
+    <!-- Include the survey components -->
+    <script src="../builder-embed/builder-embed.js"></script>
+    <script src="../reader-embed/reader-embed.js"></script>
+
+    <script>
+      // Variables to track language and components
+      let isEnglish = false;
+      let builderInstance = null;
+      let readerInstance = null;
+
+      // UI elements
+      const enButton = document.getElementById("en-button");
+      const arButton = document.getElementById("ar-button");
+      const builderTitle = document.getElementById("builder-title");
+      const readerTitle = document.getElementById("reader-title");
+
+      // Function to initialize the components
+      function initComponents() {
+        // Clear existing instances
+        if (builderInstance) {
+          builderInstance.destroy();
+        }
+        if (readerInstance) {
+          readerInstance.destroy();
+        }
+
+        // Update UI text based on language
+        builderTitle.textContent = isEnglish
+          ? "Survey Builder"
+          : "منشئ الاستبيان";
+        readerTitle.textContent = isEnglish
+          ? "Survey Reader"
+          : "قارئ الاستبيان";
+
+        // Initialize the builder
+        builderInstance = new SurveyBuilder("#survey-builder", {
+          isEnglish: isEnglish,
+          onSave: async (data) => {
+            console.log("Survey saved:", data);
+
+            // Save to localStorage
+            localStorage.setItem("survey-data", JSON.stringify(data));
+
+            // Update the reader with the new data
+            if (readerInstance) {
+              readerInstance.destroy();
+            }
+
+            initReader(data);
+
+            return data;
+          },
+        });
+
+        // Load existing data from localStorage
+        const savedData = localStorage.getItem("survey-data");
+        if (savedData) {
+          initReader(JSON.parse(savedData));
+        } else {
+          initReader();
+        }
+      }
+
+      // Function to initialize the reader component
+      function initReader(data = null) {
+        readerInstance = new SurveyReader("#survey-reader", {
+          isEnglish: isEnglish,
+          surveyData: data,
+          onSubmit: async (responses) => {
+            console.log("Survey submitted:", responses);
+
+            // Save responses to localStorage
+            const savedResponses = JSON.parse(
+              localStorage.getItem("survey-responses") || "[]"
+            );
+            savedResponses.push({
+              ...responses,
+              timestamp: new Date().toISOString(),
+            });
+            localStorage.setItem(
+              "survey-responses",
+              JSON.stringify(savedResponses)
+            );
+
+            return responses;
+          },
+        });
+      }
+
+      // Add event listeners for language toggle
+      enButton.addEventListener("click", () => {
+        if (!isEnglish) {
+          isEnglish = true;
+          enButton.classList.add("active");
+          arButton.classList.remove("active");
+          initComponents();
+        }
+      });
+
+      arButton.addEventListener("click", () => {
+        if (isEnglish) {
+          isEnglish = false;
+          arButton.classList.add("active");
+          enButton.classList.remove("active");
+          initComponents();
+        }
+      });
+
+      // Initialize components on page load
+      document.addEventListener("DOMContentLoaded", initComponents);
+    </script>
+  </body>
+</html>
