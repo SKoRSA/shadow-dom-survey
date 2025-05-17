@@ -23,7 +23,7 @@ function HomepageHeader() {
                 href={`${siteConfig.baseUrl}docs/intro`}
                 style={{
                   position: "relative",
-                  zIndex: 10,
+                  zIndex: 5,
                   pointerEvents: "all",
                 }}
               >
