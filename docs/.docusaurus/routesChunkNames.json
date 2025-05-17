@@ -1,87 +1,130 @@
 {
-  "/shadow-dom-survey/demo-04d": {
-    "__comp": "0ba1da2d",
+  "/shadow-dom-survey/__docusaurus/debug-f97": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "3e2a5caa"
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+    }
+  },
+  "/shadow-dom-survey/__docusaurus/debug/config-e12": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+    }
+  },
+  "/shadow-dom-survey/__docusaurus/debug/content-ccb": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
     },
-    "config": "5e9f5e1a"
+    "allContent": "allContent---shadow-dom-survey-docusaurus-debug-content-246-43b"
+  },
+  "/shadow-dom-survey/__docusaurus/debug/globalData-ec5": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+    }
+  },
+  "/shadow-dom-survey/__docusaurus/debug/metadata-a05": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+    }
+  },
+  "/shadow-dom-survey/__docusaurus/debug/registry-aa4": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+    }
+  },
+  "/shadow-dom-survey/__docusaurus/debug/routes-beb": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+    }
+  },
+  "/shadow-dom-survey/demo-04d": {
+    "__comp": "__comp---site-src-pages-demo-js-0-ba-09a",
+    "__context": {
+      "plugin": "plugin---shadow-dom-survey-demo-3-e-2-d42"
+    },
+    "config": "config---shadow-dom-survey-demo-5-e-9-ff8"
   },
   "/shadow-dom-survey/docs-b4b": {
-    "__comp": "1be78505",
+    "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "a799794f"
+      "plugin": "plugin---shadow-dom-survey-docsa-79-543"
     },
-    "versionMetadata": "935f2afb"
+    "versionMetadata": "versionMetadata---shadow-dom-survey-docs-935-268"
   },
   "/shadow-dom-survey/docs/api/builder-api-365": {
-    "__comp": "17896441",
-    "content": "52f49525"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-api-builder-api-52-f-6cd"
   },
   "/shadow-dom-survey/docs/api/overview-9c7": {
-    "__comp": "17896441",
-    "content": "65df3d35"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-api-overview-65-d-ffd"
   },
   "/shadow-dom-survey/docs/api/reader-api-fde": {
-    "__comp": "17896441",
-    "content": "a62b5dde"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-api-reader-apia-62-f1c"
   },
   "/shadow-dom-survey/docs/components/survey-builder-6cd": {
-    "__comp": "17896441",
-    "content": "bf267060"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-components-survey-builderbf-2-68a"
   },
   "/shadow-dom-survey/docs/components/survey-reader-882": {
-    "__comp": "17896441",
-    "content": "645f88b0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-components-survey-reader-645-161"
   },
   "/shadow-dom-survey/docs/contributing/guidelines-3da": {
-    "__comp": "17896441",
-    "content": "31015eea"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-contributing-guidelines-310-59d"
   },
   "/shadow-dom-survey/docs/getting-started/installation-86b": {
-    "__comp": "17896441",
-    "content": "54f44165"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-getting-started-installation-54-f-f0e"
   },
   "/shadow-dom-survey/docs/getting-started/quick-start-0d3": {
-    "__comp": "17896441",
-    "content": "588bd741"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-getting-started-quick-start-588-2ea"
   },
   "/shadow-dom-survey/docs/intro-4a9": {
-    "__comp": "17896441",
-    "content": "0e384e19"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-intro-0-e-3-37d"
   },
   "/shadow-dom-survey/docs/question-types/dropdown-351": {
-    "__comp": "17896441",
-    "content": "b7b7dd45"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-question-types-dropdownb-7-b-7ed"
   },
   "/shadow-dom-survey/docs/question-types/matrix-f71": {
-    "__comp": "17896441",
-    "content": "b0119580"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-question-types-matrixb-01-e33"
   },
   "/shadow-dom-survey/docs/question-types/multi-line-text-e80": {
-    "__comp": "17896441",
-    "content": "8edb9aa9"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-question-types-multi-line-text-8-ed-4a0"
   },
   "/shadow-dom-survey/docs/question-types/multiple-choice-549": {
-    "__comp": "17896441",
-    "content": "6870cd6b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-question-types-multiple-choice-687-28a"
   },
   "/shadow-dom-survey/docs/question-types/rating-29e": {
-    "__comp": "17896441",
-    "content": "9296da72"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-question-types-rating-929-519"
   },
   "/shadow-dom-survey/docs/question-types/single-choice-4ee": {
-    "__comp": "17896441",
-    "content": "6893e07a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-question-types-single-choice-689-07a"
   },
   "/shadow-dom-survey/docs/question-types/single-line-text-dd8": {
-    "__comp": "17896441",
-    "content": "7b105ffe"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---shadow-dom-survey-docs-question-types-single-line-text-7-b-1-19f"
   },
   "/shadow-dom-survey/-366": {
-    "__comp": "c4f5d8e4",
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "3e2a5caa"
+      "plugin": "plugin---shadow-dom-survey-demo-3-e-2-d42"
     },
-    "config": "5e9f5e1a"
+    "config": "config---shadow-dom-survey-demo-5-e-9-ff8"
   }
 }
