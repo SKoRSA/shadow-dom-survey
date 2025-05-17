@@ -16,8 +16,8 @@ A complete survey system with builder and reader components, built with Shadow D
 
 ```html
 <!-- Include Shadow DOM Survey Components -->
-<script src="builder-embed/builder-embed.js"></script>
-<script src="reader-embed/reader-embed.js"></script>
+<script src="builder-embed.js"></script>
+<script src="reader-embed.js"></script>
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ A complete survey system with builder and reader components, built with Shadow D
 ```javascript
 // Initialize builder
 const builderInstance = new SurveyBuilder("#surveyBuilder", {
-  isEnglish: false, // Arabic by default
+  isEnglish: true, // English by default
   onSave: async (data) => {
     // Handle the survey data
     console.log("Survey saved:", data);
@@ -38,6 +38,21 @@ const builderInstance = new SurveyBuilder("#surveyBuilder", {
     return data;
   },
 });
+
+// Example of creating a survey programmatically
+builderInstance.setData({
+  surveyId: "survey_" + Date.now().toString(36),
+  title: "Customer Feedback",
+  description: "Please share your experience",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
+  question: {
+    type: "singleChoice",
+    text: "How would you rate our service?",
+    settings: { required: true },
+    options: ["Excellent", "Good", "Average", "Poor"],
+  },
+});
 ```
 
 ### Survey Reader
@@ -45,9 +60,21 @@ const builderInstance = new SurveyBuilder("#surveyBuilder", {
 ```javascript
 // Initialize reader with saved survey data
 const readerInstance = new SurveyReader("#surveyReader", {
-  isEnglish: false, // Arabic by default
+  isEnglish: true, // English by default
+  surveyData: {
+    surveyId: "survey_123",
+    title: "Customer Feedback",
+    description: "Please share your experience",
+    question: {
+      type: "singleChoice",
+      text: "How would you rate our service?",
+      settings: { required: true },
+      options: ["Excellent", "Good", "Average", "Poor"],
+    },
+  },
+  // Alternatively, load data from a source
   loadSurvey: async () => {
-    // Load survey data from a source
+    // Load survey data from a source (only used if surveyData is not provided)
     const data = JSON.parse(localStorage.getItem("surveyData"));
     return data;
   },
@@ -65,6 +92,13 @@ const readerInstance = new SurveyReader("#surveyReader", {
     return responses;
   },
 });
+
+// Listen for submission events
+document
+  .querySelector("#surveyReader")
+  .addEventListener("survey-submit", (event) => {
+    console.log("Survey submitted:", event.detail);
+  });
 ```
 
 ## API Reference
@@ -75,7 +109,7 @@ const readerInstance = new SurveyReader("#surveyReader", {
 
 | Option                 | Type     | Default                | Description                               |
 | ---------------------- | -------- | ---------------------- | ----------------------------------------- |
-| `isEnglish`            | Boolean  | `false`                | Set to true for English, false for Arabic |
+| `isEnglish`            | Boolean  | `true`                 | Set to true for English, false for Arabic |
 | `onSave`               | Function | `async (data) => data` | Callback when survey is saved             |
 | `loadSurvey`           | Function | `async () => null`     | Function to load existing survey data     |
 | `autosave`             | Boolean  | `false`                | Enable automatic saving of survey data    |
@@ -85,6 +119,8 @@ const readerInstance = new SurveyReader("#surveyReader", {
 
 - `save()`: Save the current survey data
 - `reset()`: Reset the builder to its initial state
+- `getData()`: Get current survey data without saving
+- `setData(data)`: Load survey data programmatically
 - `destroy()`: Clean up the component and remove event listeners
 
 ### SurveyReader
@@ -107,6 +143,10 @@ const readerInstance = new SurveyReader("#surveyReader", {
 
 - `destroy()`: Clean up the component and remove event listeners
 
+#### Events
+
+- `survey-submit`: Fired when a survey is submitted with response data in `event.detail`
+
 ## Question Types
 
 The system supports the following question types:
@@ -127,15 +167,6 @@ The components are compatible with all modern browsers that support Shadow DOM:
 - Firefox 63+
 - Safari 10.1+
 - Edge 79+
-
-## Examples & Demos
-
-Check out the `docs/examples` directory for working examples:
-
-1. `basic-usage.html` - A simple implementation with minimal configuration
-2. `advanced-demo.html` - A comprehensive demo with workflow steps, multilingual support, and response tracking
-
-You can also visit our [live demos](https://skorsa.github.io/shadow-dom-survey/examples/) to see the components in action.
 
 ## License
 
