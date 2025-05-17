@@ -20,8 +20,11 @@ When creating or using this question type with the Shadow DOM Survey components,
 
 ```javascript
 {
+  "surveyId": "uniqueId123",
   "title": "Customer Satisfaction Survey",
   "description": "Please rate our services",
+  "createdAt": "2023-07-10T15:30:45.123Z",
+  "updatedAt": "2023-07-10T16:45:12.456Z",
   "question": {
     "type": "rating",
     "text": "How would you rate our customer service?",
@@ -60,7 +63,7 @@ The response data for rating questions is structured as follows:
   "submittedAt": "2023-07-15T14:32:45.123Z",
   "questionType": "rating",
   "questionText": "How would you rate our customer service?",
-  "answer": 4
+  "response": 4
 }
 ```
 
@@ -80,8 +83,11 @@ const builder = new SurveyBuilder("#surveyBuilder", {
 
 // Create a rating question programmatically
 builder.setData({
+  surveyId: "survey_" + Date.now().toString(36),
   title: "Product Feedback",
   description: "Help us improve our product",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "rating",
     text: "How likely are you to recommend our product to others?",
@@ -100,6 +106,7 @@ builder.setData({
 const reader = new SurveyReader("#surveyReader", {
   isEnglish: true,
   surveyData: {
+    surveyId: "survey_" + Date.now().toString(36),
     title: "Product Feedback",
     description: "Help us improve our product",
     question: {

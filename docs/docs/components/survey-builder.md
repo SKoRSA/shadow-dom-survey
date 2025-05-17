@@ -29,7 +29,7 @@ To use the Survey Builder in your website:
 <div id="surveyBuilder"></div>
 
 <!-- Include the script -->
-<script src="path/to/builder-embed.js"></script>
+<script src="builder-embed.js"></script>
 
 <!-- Initialize the builder -->
 <script>
@@ -50,7 +50,7 @@ The Survey Builder accepts the following configuration options:
 
 | Option                 | Type     | Default                | Description                                          |
 | ---------------------- | -------- | ---------------------- | ---------------------------------------------------- |
-| `isEnglish`            | Boolean  | `false`                | Set to `true` for English UI, `false` for Arabic     |
+| `isEnglish`            | Boolean  | `true`                 | Set to `true` for English UI, `false` for Arabic     |
 | `onSave`               | Function | `async (data) => data` | Callback when survey is saved                        |
 | `loadSurvey`           | Function | `async () => null`     | Function to load existing survey data asynchronously |
 | `autosave`             | Boolean  | `false`                | Enable/disable automatic saving                      |
@@ -63,7 +63,7 @@ The Survey Builder accepts the following configuration options:
 Programmatically triggers the save action and returns a boolean indicating success.
 
 ```javascript
-const saveResult = await builder.save();
+const saveResult = builder.save();
 if (saveResult) {
   console.log("Survey saved successfully");
 }
@@ -92,8 +92,11 @@ Loads existing survey data into the builder.
 
 ```javascript
 builder.setData({
+  surveyId: "survey_" + Date.now().toString(36),
   title: "Customer Feedback",
   description: "Please share your experience",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "singleChoice",
     text: "How would you rate our service?",
@@ -109,22 +112,6 @@ Removes the component and cleans up resources.
 
 ```javascript
 builder.destroy();
-```
-
-## Events
-
-The builder dispatches a custom event:
-
-| Event Name    | Description                | Details                        |
-| ------------- | -------------------------- | ------------------------------ |
-| `survey-save` | Fires when survey is saved | Contains the saved survey data |
-
-```javascript
-document
-  .querySelector("#surveyBuilder")
-  .addEventListener("survey-save", (event) => {
-    console.log("Survey saved:", event.detail);
-  });
 ```
 
 ## Customizable Demo (Run Your Own)
@@ -224,6 +211,9 @@ Create the following files to run your own customizable demo:
       document
         .getElementById("arabicToggle")
         .addEventListener("change", function (e) {
+          // Get current data to preserve it
+          const currentData = builder.getData();
+          
           // Destroy and recreate with new language setting
           builder.destroy();
           builder = new SurveyBuilder("#surveyBuilder", {
@@ -234,6 +224,11 @@ Create the following files to run your own customizable demo:
               return data;
             },
           });
+          
+          // Restore the previous data if available
+          if (currentData && currentData.surveyId) {
+            builder.setData(currentData);
+          }
         });
 
       // Handle getData button
@@ -251,8 +246,11 @@ Create the following files to run your own customizable demo:
         .getElementById("loadSample")
         .addEventListener("click", function () {
           const sampleData = {
+            surveyId: "survey_" + Date.now().toString(36),
             title: "Customer Satisfaction Survey",
             description: "Please help us improve our services",
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString(),
             question: {
               type: "singleChoice",
               text: "How satisfied are you with our service?",

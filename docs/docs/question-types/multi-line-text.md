@@ -20,8 +20,11 @@ When creating or using this question type with the Shadow DOM Survey components,
 
 ```javascript
 {
+  "surveyId": "uniqueId123",
   "title": "Feedback Form",
   "description": "We value your input",
+  "createdAt": "2023-07-10T15:30:45.123Z",
+  "updatedAt": "2023-07-10T16:45:12.456Z",
   "question": {
     "type": "longText",
     "text": "Please describe your experience with our product.",
@@ -59,7 +62,7 @@ The response data for multi-line text questions is structured as follows:
   "submittedAt": "2023-07-15T14:32:45.123Z",
   "questionType": "longText",
   "questionText": "Please describe your experience with our product.",
-  "answer": "I found the product very intuitive to use.\n\nThe interface is clean and modern, and I especially appreciated the helpful tooltips."
+  "response": "I found the product very intuitive to use.\n\nThe interface is clean and modern, and I especially appreciated the helpful tooltips."
 }
 ```
 
@@ -79,8 +82,11 @@ const builder = new SurveyBuilder("#surveyBuilder", {
 
 // Create a multi-line text question programmatically
 builder.setData({
+  surveyId: "survey_" + Date.now().toString(36),
   title: "Feedback Form",
   description: "We value your input",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "longText",
     text: "Please describe your experience with our product.",
@@ -99,6 +105,7 @@ builder.setData({
 const reader = new SurveyReader("#surveyReader", {
   isEnglish: true,
   surveyData: {
+    surveyId: "survey_" + Date.now().toString(36),
     title: "Feedback Form",
     description: "We value your input",
     question: {

@@ -20,8 +20,11 @@ When creating or using this question type with the Shadow DOM Survey components,
 
 ```javascript
 {
+  "surveyId": "uniqueId123",
   "title": "Product Preferences Survey",
   "description": "Help us understand your preferences",
+  "createdAt": "2023-07-10T15:30:45.123Z",
+  "updatedAt": "2023-07-10T16:45:12.456Z",
   "question": {
     "type": "singleChoice",
     "text": "What is your favorite color?",
@@ -71,7 +74,7 @@ The response data for single choice questions is structured as follows:
   "submittedAt": "2023-07-15T14:32:45.123Z",
   "questionType": "singleChoice",
   "questionText": "What is your favorite color?",
-  "answer": "Blue"
+  "response": "Blue"
 }
 ```
 
@@ -91,8 +94,11 @@ const builder = new SurveyBuilder("#surveyBuilder", {
 
 // Create a single choice question programmatically
 builder.setData({
+  surveyId: "survey_" + Date.now().toString(36),
   title: "Customer Survey",
   description: "Help us improve our service",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "singleChoice",
     text: "How did you hear about us?",
@@ -116,6 +122,7 @@ builder.setData({
 const reader = new SurveyReader("#surveyReader", {
   isEnglish: true,
   surveyData: {
+    surveyId: "survey_" + Date.now().toString(36),
     title: "Customer Survey",
     description: "Help us improve our service",
     question: {

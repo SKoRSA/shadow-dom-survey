@@ -20,8 +20,11 @@ When creating or using this question type with the Shadow DOM Survey components,
 
 ```javascript
 {
+  "surveyId": "uniqueId123",
   "title": "Product Feature Survey",
   "description": "Help us prioritize our development roadmap",
+  "createdAt": "2023-07-10T15:30:45.123Z",
+  "updatedAt": "2023-07-10T16:45:12.456Z",
   "question": {
     "type": "multipleChoice",
     "text": "Which features would you like to see in our next release?",
@@ -73,7 +76,7 @@ The response data for multiple choice questions is structured as follows:
   "submittedAt": "2023-07-15T14:32:45.123Z",
   "questionType": "multipleChoice",
   "questionText": "Which features would you like to see in our next release?",
-  "answer": [
+  "response": [
     "Improved user interface",
     "Mobile app support",
     "Integration with other tools"
@@ -97,8 +100,11 @@ const builder = new SurveyBuilder("#surveyBuilder", {
 
 // Create a multiple choice question programmatically
 builder.setData({
+  surveyId: "survey_" + Date.now().toString(36),
   title: "User Preferences Survey",
   description: "Help us understand how you use our product",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "multipleChoice",
     text: "Which of the following devices do you use to access our service? (Select all that apply)",
@@ -124,6 +130,7 @@ builder.setData({
 const reader = new SurveyReader("#surveyReader", {
   isEnglish: true,
   surveyData: {
+    surveyId: "survey_" + Date.now().toString(36),
     title: "User Preferences Survey",
     description: "Help us understand how you use our product",
     question: {

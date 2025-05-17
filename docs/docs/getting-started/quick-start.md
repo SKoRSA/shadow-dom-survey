@@ -87,8 +87,8 @@ Create a basic HTML file with containers for the builder and reader:
     </div>
 
     <!-- Include Shadow DOM Survey Components -->
-    <script src="path/to/builder-embed.js"></script>
-    <script src="path/to/reader-embed.js"></script>
+    <script src="builder-embed.js"></script>
+    <script src="reader-embed.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
@@ -170,12 +170,6 @@ document.getElementById("loadReaderBtn").addEventListener("click", function () {
 
 // Listen for custom events
 document
-  .querySelector("#surveyBuilder")
-  .addEventListener("survey-save", (event) => {
-    console.log("Survey save event received:", event.detail);
-  });
-
-document
   .querySelector("#surveyReader")
   .addEventListener("survey-submit", (event) => {
     console.log("Survey submit event received:", event.detail);
@@ -220,8 +214,11 @@ You can create a survey programmatically using the `setData` method of the build
 ```javascript
 // Create a survey object
 const surveyData = {
+  surveyId: "survey_" + Date.now().toString(36),
   title: "Product Feedback",
   description: "Please tell us about your experience with our product",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "multipleChoice",
     text: "Which features would you like to see improved?",
@@ -322,6 +319,9 @@ document
       ? "Switch to English"
       : "Switch to Arabic";
 
+    // Get the current builder data if needed
+    const currentBuilderData = builder.getData();
+
     // Recreate builder with new language
     builder.destroy();
     builder = new SurveyBuilder("#surveyBuilder", {
@@ -331,6 +331,11 @@ document
         return data;
       },
     });
+
+    // Optionally restore builder data
+    if (currentBuilderData) {
+      builder.setData(currentBuilderData);
+    }
 
     // Recreate reader with new language
     reader.destroy();
@@ -354,7 +359,7 @@ document
 
 2. **SurveyBuilder Methods**: The builder provides `getData()`, `setData()`, `save()`, `reset()`, and `destroy()` methods for managing surveys.
 
-3. **Event Handling**: Both components dispatch custom events (`survey-save` and `survey-submit`) that you can listen for.
+3. **Event Handling**: The SurveyReader component dispatches a custom event (`survey-submit`) when a survey is submitted that you can listen for.
 
 ## What's Next?
 

@@ -20,13 +20,17 @@ When creating or using this question type with the Shadow DOM Survey components,
 
 ```javascript
 {
+  "surveyId": "uniqueId123",
   "title": "Global Demographics Survey",
   "description": "Help us understand our audience better",
+  "createdAt": "2023-07-10T15:30:45.123Z",
+  "updatedAt": "2023-07-10T16:45:12.456Z",
   "question": {
     "type": "dropdown",
     "text": "In which country do you currently reside?",
     "settings": {
-      "required": true
+      "required": true,
+      "placeholder": "Select a country"
     },
     "options": [
       "United States",
@@ -72,7 +76,7 @@ The response data for dropdown questions is structured as follows:
   "submittedAt": "2023-07-15T14:32:45.123Z",
   "questionType": "dropdown",
   "questionText": "In which country do you currently reside?",
-  "answer": "Canada"
+  "response": "Canada"
 }
 ```
 
@@ -92,13 +96,17 @@ const builder = new SurveyBuilder("#surveyBuilder", {
 
 // Create a dropdown question programmatically
 builder.setData({
+  surveyId: "survey_" + Date.now().toString(36),
   title: "Education Survey",
   description: "Help us understand our audience better",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "dropdown",
     text: "What is your highest level of education?",
     settings: {
       required: true,
+      placeholder: "Select your education level"
     },
     options: [
       "High school",
@@ -120,6 +128,7 @@ builder.setData({
 const reader = new SurveyReader("#surveyReader", {
   isEnglish: true,
   surveyData: {
+    surveyId: "survey_" + Date.now().toString(36),
     title: "Education Survey",
     description: "Help us understand our audience better",
     question: {
@@ -127,6 +136,7 @@ const reader = new SurveyReader("#surveyReader", {
       text: "What is your highest level of education?",
       settings: {
         required: true,
+        placeholder: "Select your education level"
       },
       options: [
         "High school",
@@ -166,7 +176,7 @@ const updatedReader = new SurveyReader("#surveyReader", {
   </div>
   <div class="select-wrapper">
     <select id="sr-response-select" required>
-      <option value="" disabled selected>Select an option</option>
+      <option value="" disabled selected>Select your education level</option>
       <option value="0">High school</option>
       <option value="1">Some college</option>
       <option value="2">Associate's degree</option>
@@ -185,7 +195,7 @@ const updatedReader = new SurveyReader("#surveyReader", {
 ## Best Practices
 
 1. **Use for long lists**: Dropdowns are ideal when you have many options (countries, states, etc.)
-2. **Clear placeholder**: The component automatically adds a "Select an option" placeholder
+2. **Clear placeholder**: Set a descriptive placeholder to guide users
 3. **Logical ordering**: Arrange options alphabetically or in another logical order
 4. **Mobile-friendly**: The component ensures your dropdown works well on mobile devices
 5. **Appropriate sizing**: The dropdown is styled to accommodate long option text

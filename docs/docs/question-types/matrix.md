@@ -21,8 +21,11 @@ When creating or using this question type with the Shadow DOM Survey components,
 
 ```javascript
 {
+  "surveyId": "uniqueId123",
   "title": "Customer Satisfaction Survey",
   "description": "Help us improve our services",
+  "createdAt": "2023-07-10T15:30:45.123Z",
+  "updatedAt": "2023-07-10T16:45:12.456Z",
   "question": {
     "type": "matrix",
     "text": "Please rate your satisfaction with the following aspects of our service:",
@@ -82,7 +85,7 @@ The response data for matrix questions is structured as follows:
   "submittedAt": "2023-07-15T14:32:45.123Z",
   "questionType": "matrix",
   "questionText": "Please rate your satisfaction with the following aspects of our service:",
-  "answer": {
+  "response": {
     "matrix": {
       "Customer support": "Satisfied",
       "Product quality": "Very Satisfied",
@@ -110,8 +113,11 @@ const builder = new SurveyBuilder("#surveyBuilder", {
 
 // Create a matrix question programmatically
 builder.setData({
+  surveyId: "survey_" + Date.now().toString(36),
   title: "Product Evaluation",
   description: "Please evaluate our product based on the following criteria",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "matrix",
     text: "Please indicate your level of agreement with the following statements:",
@@ -143,6 +149,7 @@ builder.setData({
 const reader = new SurveyReader("#surveyReader", {
   isEnglish: true,
   surveyData: {
+    surveyId: "survey_" + Date.now().toString(36),
     title: "Product Evaluation",
     description: "Please evaluate our product based on the following criteria",
     question: {

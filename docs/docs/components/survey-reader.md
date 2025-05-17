@@ -29,13 +29,14 @@ To use the Survey Reader in your website:
 <div id="surveyReader"></div>
 
 <!-- Include the script -->
-<script src="path/to/reader-embed.js"></script>
+<script src="reader-embed.js"></script>
 
 <!-- Initialize the reader -->
 <script>
   const reader = new SurveyReader("#surveyReader", {
     isEnglish: true,
     surveyData: {
+      surveyId: "survey_123",
       title: "Customer Feedback",
       description: "Please share your experience",
       question: {
@@ -89,6 +90,7 @@ reader.destroy();
 > reader = new SurveyReader("#surveyReader", {
 >   isEnglish: true,
 >   surveyData: {
+>     surveyId: "survey_456",
 >     title: "New Survey Title",
 >     description: "New description",
 >     question: {
@@ -222,6 +224,7 @@ Create the following files to run your own customizable demo:
       // Sample surveys for each type
       const sampleSurveys = {
         singleChoice: {
+          surveyId: "single_choice_sample",
           title: "Customer Satisfaction",
           description: "Please rate your experience",
           question: {
@@ -238,6 +241,7 @@ Create the following files to run your own customizable demo:
           },
         },
         multipleChoice: {
+          surveyId: "multiple_choice_sample",
           title: "Feature Preferences",
           description: "Help us prioritize our roadmap",
           question: {
@@ -254,6 +258,7 @@ Create the following files to run your own customizable demo:
           },
         },
         singleText: {
+          surveyId: "single_text_sample",
           title: "Contact Information",
           description: "Please provide your email",
           question: {
@@ -266,6 +271,7 @@ Create the following files to run your own customizable demo:
           },
         },
         longText: {
+          surveyId: "long_text_sample",
           title: "User Feedback",
           description: "Share your thoughts with us",
           question: {
@@ -278,6 +284,7 @@ Create the following files to run your own customizable demo:
           },
         },
         rating: {
+          surveyId: "rating_sample",
           title: "Product Rating",
           description: "Rate our product",
           question: {
@@ -290,6 +297,7 @@ Create the following files to run your own customizable demo:
           },
         },
         dropdown: {
+          surveyId: "dropdown_sample",
           title: "User Demographics",
           description: "Help us understand our users better",
           question: {
@@ -307,6 +315,7 @@ Create the following files to run your own customizable demo:
           },
         },
         matrix: {
+          surveyId: "matrix_sample",
           title: "Product Evaluation",
           description: "Rate different aspects of our product",
           question: {

@@ -23,7 +23,7 @@ const builderInstance = new SurveyBuilder(selector, options);
 
 | Option                 | Type     | Default                | Description                                              |
 | ---------------------- | -------- | ---------------------- | -------------------------------------------------------- |
-| `isEnglish`            | Boolean  | `false`                | `true` for English UI, `false` for Arabic                |
+| `isEnglish`            | Boolean  | `true`                 | `true` for English UI, `false` for Arabic                |
 | `onSave`               | Function | `async (data) => data` | Callback executed after the **Save** button is pressed   |
 | `loadSurvey`           | Function | `async () => null`     | Function that should return previously-saved survey JSON |
 | `autosave`             | Boolean  | `false`                | Enable/disable automatic saving on form changes          |
@@ -36,13 +36,13 @@ const builderInstance = new SurveyBuilder(selector, options);
 Saves the current survey data, triggers the `onSave` callback, and returns a boolean indicating success.
 
 ```javascript
-const result = await builderInstance.save();
+const result = builderInstance.save();
 if (result) {
   console.log("Survey saved successfully");
 }
 ```
 
-**Returns**: Promise&lt;boolean&gt; - `true` if save was successful, `false` otherwise
+**Returns**: boolean - `true` if save was successful, `false` otherwise
 
 ### reset()
 
@@ -107,25 +107,6 @@ The survey data structure used by the builder has the following format:
 }
 ```
 
-## Events
-
-The component dispatches a custom event when important actions occur:
-
-| Event name    | When it fires           | `event.detail` contents |
-| ------------- | ----------------------- | ----------------------- |
-| `survey-save` | After successful save() | The saved survey JSON   |
-
-### Example: Listening for events
-
-```javascript
-document
-  .querySelector("#surveyBuilder")
-  .addEventListener("survey-save", (event) => {
-    console.log("Survey saved!", event.detail);
-    // You could save to database here
-  });
-```
-
 ## Complete Usage Example
 
 ```javascript
@@ -154,7 +135,7 @@ currentData.title = "Updated Survey";
 builder.setData(currentData);
 
 // Save the survey
-const saveSuccessful = await builder.save();
+const saveSuccessful = builder.save();
 
 // Clean up when done
 // builder.destroy();

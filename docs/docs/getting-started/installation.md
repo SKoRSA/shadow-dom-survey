@@ -11,12 +11,11 @@ Shadow DOM Survey components can be easily integrated into any web project. This
 ### Method 1: From GitHub Repository
 
 1. Clone or download the repository from [GitHub](https://github.com/SKoRSA/shadow-dom-survey)
-2. Copy the `builder-embed` and `reader-embed` folders to your project
-3. Include the JavaScript files in your HTML:
+2. Include the JavaScript files in your HTML:
 
 ```html
-<script src="./builder-embed/builder-embed.js"></script>
-<script src="./reader-embed/reader-embed.js"></script>
+<script src="./builder-embed.js"></script>
+<script src="./reader-embed.js"></script>
 ```
 
 ### Method 2: NPM Package (Coming Soon)
@@ -63,7 +62,7 @@ The SurveyBuilder component provides several methods:
 
 ```javascript
 // Save the survey programmatically
-const saveResult = await builder.save();
+const saveResult = builder.save();
 if (saveResult) {
   console.log("Survey saved successfully");
 }
@@ -73,8 +72,11 @@ const currentData = builder.getData();
 
 // Load survey data programmatically
 builder.setData({
+  surveyId: "uniqueId123",
   title: "Customer Feedback",
   description: "Please share your experience",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "singleChoice",
     text: "How would you rate our service?",
@@ -100,6 +102,7 @@ let reader = new SurveyReader("#surveyReader", {
   isEnglish: true, // true for English UI, false for Arabic
   // Provide survey data directly
   surveyData: {
+    surveyId: "uniqueId123",
     title: "Customer Feedback",
     description: "Please share your experience",
     question: {
@@ -119,7 +122,7 @@ let reader = new SurveyReader("#surveyReader", {
     // Process submission data
     return responses;
   },
-  completedTitle: "Thank you!",
+  completedTitle: "Thank You!",
   completedMessage: "Thank you for completing the survey!",
   submitButtonText: "Submit",
   requiredFieldMessage: "This question requires an answer",

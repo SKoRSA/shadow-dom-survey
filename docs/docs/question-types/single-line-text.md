@@ -19,8 +19,11 @@ When creating or using this question type with the Shadow DOM Survey components,
 
 ```javascript
 {
+  "surveyId": "uniqueId123",
   "title": "Customer Feedback Survey",
   "description": "Help us improve our service",
+  "createdAt": "2023-07-10T15:30:45.123Z",
+  "updatedAt": "2023-07-10T16:45:12.456Z",
   "question": {
     "type": "singleText",
     "text": "What is your name?",
@@ -58,7 +61,7 @@ The response data for single line text questions is structured as follows:
   "submittedAt": "2023-07-15T14:32:45.123Z",
   "questionType": "singleText",
   "questionText": "What is your name?",
-  "answer": "John Smith"
+  "response": "John Smith"
 }
 ```
 
@@ -78,8 +81,11 @@ const builder = new SurveyBuilder("#surveyBuilder", {
 
 // Create a single line text question programmatically
 builder.setData({
+  surveyId: "survey_" + Date.now().toString(36),
   title: "User Information",
   description: "Please provide your details",
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
   question: {
     type: "singleText",
     text: "What is your email address?",
@@ -98,6 +104,7 @@ builder.setData({
 const reader = new SurveyReader("#surveyReader", {
   isEnglish: true,
   surveyData: {
+    surveyId: "survey_" + Date.now().toString(36),
     title: "User Information",
     description: "Please provide your details",
     question: {
