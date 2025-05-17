@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Circle with Shadow Effect -->
+  <circle cx="100" cy="100" r="80" fill="url(#paint0_linear)" />
+  
+  <!-- Survey Form Icon -->
+  <path d="M70 75H130C133.314 75 136 77.6863 136 81V129C136 132.314 133.314 135 130 135H70C66.6863 135 64 132.314 64 129V81C64 77.6863 66.6863 75 70 75Z" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Form Lines -->
+  <path d="M82 94H118" stroke="white" stroke-width="6" stroke-linecap="round" />
+  <path d="M82 114H105" stroke="white" stroke-width="6" stroke-linecap="round" />
+  
+  <!-- Shadow DOM Representation -->
+  <path d="M152 100C152 128.719 128.719 152 100 152C71.2812 152 48 128.719 48 100" stroke="white" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round" />
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="20" y1="20" x2="160" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4F46E5" />
+      <stop offset="1" stop-color="#818CF8" />
+    </linearGradient>
+  </defs>
+</svg>

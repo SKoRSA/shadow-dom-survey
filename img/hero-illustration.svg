@@ -1,0 +1,93 @@
+<svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .survey-window {
+      fill: #ffffff;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.08));
+    }
+    .survey-header {
+      fill: #f5f6f7;
+    }
+    .survey-content {
+      fill: #ffffff;
+    }
+    .question-text {
+      fill: #333333;
+    }
+    .option {
+      fill: #f2f4f7;
+    }
+    .option-selected {
+      fill: #e8f0fe;
+      stroke: #4361ee;
+    }
+    .checkbox-selected {
+      fill: #4361ee;
+    }
+    .button-primary {
+      fill: #4361ee;
+    }
+    .text-white {
+      fill: #ffffff;
+    }
+    .icon {
+      fill: #4361ee;
+    }
+    .shadow {
+      fill: #E2E8F0;
+    }
+  </style>
+  
+  <!-- Background elements -->
+  <circle cx="400" cy="100" r="50" fill="#4361ee" opacity="0.1" />
+  <circle cx="80" cy="350" r="30" fill="#4361ee" opacity="0.1" />
+  <circle cx="200" cy="50" r="20" fill="#4361ee" opacity="0.1" />
+  
+  <!-- Survey Window Shadow -->
+  <rect x="95" y="85" width="310" height="260" rx="12" class="shadow" />
+  
+  <!-- Survey Window -->
+  <g>
+    <rect x="85" y="75" width="310" height="260" rx="12" class="survey-window" />
+    <rect x="85" y="75" width="310" height="50" rx="12" class="survey-header" />
+    <rect x="85" y="125" width="310" height="210" rx="0 0 12 12" class="survey-content" />
+    
+    <!-- Survey title -->
+    <text x="120" y="105" font-family="Arial" font-size="14" font-weight="600" class="question-text">Customer Satisfaction Survey</text>
+    
+    <!-- Question -->
+    <text x="120" y="155" font-family="Arial" font-size="14" font-weight="600" class="question-text">How satisfied are you with our service?</text>
+    
+    <!-- Radio options -->
+    <rect x="120" y="175" width="240" height="36" rx="6" class="option" />
+    <circle cx="140" cy="193" r="10" fill="white" stroke="#cbd5e1" stroke-width="2" />
+    <text x="160" y="197" font-family="Arial" font-size="12" class="question-text">Very satisfied</text>
+    
+    <rect x="120" y="220" width="240" height="36" rx="6" class="option-selected" />
+    <circle cx="140" cy="238" r="10" fill="white" stroke="#4361ee" stroke-width="2" />
+    <circle cx="140" cy="238" r="6" class="checkbox-selected" />
+    <text x="160" y="242" font-family="Arial" font-size="12" class="question-text">Satisfied</text>
+    
+    <rect x="120" y="265" width="240" height="36" rx="6" class="option" />
+    <circle cx="140" cy="283" r="10" fill="white" stroke="#cbd5e1" stroke-width="2" />
+    <text x="160" y="287" font-family="Arial" font-size="12" class="question-text">Not satisfied</text>
+    
+    <!-- Submit button -->
+    <rect x="120" y="315" width="100" height="36" rx="6" class="button-primary" />
+    <text x="147" y="337" font-family="Arial" font-size="12" font-weight="600" class="text-white">Submit</text>
+  </g>
+  
+  <!-- Elements -->
+  <g>
+    <rect x="360" y="200" width="80" height="80" rx="8" fill="#4361ee" opacity="0.1" />
+    <path d="M400 230C400 225.582 396.418 222 392 222H382C377.582 222 374 225.582 374 230V240C374 244.418 377.582 248 382 248H392C396.418 248 400 244.418 400 240V230Z" class="icon" />
+    <path d="M385 228C385 227.448 385.448 227 386 227C386.552 227 387 227.448 387 228V233H392C392.552 233 393 233.448 393 234C393 234.552 392.552 235 392 235H386C385.448 235 385 234.552 385 234V228Z" fill="white" />
+  </g>
+  
+  <g>
+    <rect x="30" y="220" width="80" height="80" rx="8" fill="#4361ee" opacity="0.1" />
+    <path d="M70 240C70 235.582 66.4183 232 62 232H52C47.5817 232 44 235.582 44 240V250C44 254.418 47.5817 258 52 258H62C66.4183 258 70 254.418 70 250V240Z" class="icon" />
+    <rect x="50" y="240" width="14" height="2" rx="1" fill="white" />
+    <rect x="50" y="244" width="14" height="2" rx="1" fill="white" />
+    <rect x="50" y="248" width="14" height="2" rx="1" fill="white" />
+  </g>
+</svg> 
