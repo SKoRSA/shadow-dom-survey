@@ -1,0 +1,27 @@
+{
+  "unversionedId": "components/survey-reader",
+  "id": "components/survey-reader",
+  "title": "Survey Reader Component",
+  "description": "The Survey Reader component displays surveys to end-users and collects their responses. Like the builder, it's fully encapsulated using Shadow DOM to ensure consistent rendering regardless of your website's styles.",
+  "source": "@site/docs/components/survey-reader.md",
+  "sourceDirName": "components",
+  "slug": "/components/survey-reader",
+  "permalink": "/shadow-dom-survey/docs/components/survey-reader",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/components/survey-reader.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Survey Builder Component",
+    "permalink": "/shadow-dom-survey/docs/components/survey-builder"
+  },
+  "next": {
+    "title": "Single Line Text Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/single-line-text"
+  }
+}

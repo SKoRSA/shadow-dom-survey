@@ -1,0 +1,27 @@
+{
+  "unversionedId": "advanced/integration",
+  "id": "advanced/integration",
+  "title": "Integration (Coming Soon)",
+  "description": "Guides for integrating Shadow DOM Survey with popular frameworks and back-end services will be published here soon.",
+  "source": "@site/docs/advanced/integration.md",
+  "sourceDirName": "advanced",
+  "slug": "/advanced/integration",
+  "permalink": "/shadow-dom-survey/docs/advanced/integration",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/advanced/integration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Styling (Coming Soon)",
+    "permalink": "/shadow-dom-survey/docs/advanced/styling"
+  },
+  "next": {
+    "title": "RTL Support (Coming Soon)",
+    "permalink": "/shadow-dom-survey/docs/advanced/rtl-support"
+  }
+}

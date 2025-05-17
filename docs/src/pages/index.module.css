@@ -1,0 +1,287 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 1rem;
+  }
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heroLeft {
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+  z-index: 5;
+}
+
+.heroRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.heroImageBackdrop {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 10%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  z-index: 0;
+  animation: morph 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.buttons .button {
+  min-width: 200px;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
+
+.tagline {
+  max-width: 600px;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Demo section styles */
+.demoSection {
+  padding: 6rem 0;
+  background-color: var(--background-color-dark);
+  position: relative;
+}
+
+.demoContent {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.demoText {
+  flex: 1;
+}
+
+.demoTextInner {
+  max-width: 500px;
+}
+
+.demoVisual {
+  flex: 1;
+}
+
+.demoCard {
+  border-radius: var(--custom-border-radius);
+  overflow: hidden;
+  box-shadow: var(--custom-shadow);
+  transform: rotate(1deg);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.demoCard:hover {
+  transform: rotate(0deg) translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.demoImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.demoList {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.demoList li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.demoListMarker {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.demoButtons {
+  margin-top: 2rem;
+}
+
+/* CTA Section */
+.ctaSection {
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary-dark),
+    var(--ifm-color-primary)
+  );
+  padding: 6rem 0;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaSection:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.1;
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 2;
+}
+
+.ctaContent h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.ctaContent p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+.ctaButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 996px) {
+  .heroContent {
+    flex-direction: column;
+  }
+
+  .heroLeft,
+  .heroRight {
+    max-width: 100%;
+  }
+
+  .demoContent {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .demoText,
+  .demoVisual {
+    width: 100%;
+  }
+
+  .demoTextInner {
+    max-width: 100%;
+  }
+
+  .ctaContent h2 {
+    font-size: 2rem;
+  }
+
+  .ctaContent p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttons,
+  .ctaButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons .button,
+  .ctaButtons .button {
+    width: 100%;
+  }
+
+  .ctaButtons {
+    align-items: center;
+  }
+}

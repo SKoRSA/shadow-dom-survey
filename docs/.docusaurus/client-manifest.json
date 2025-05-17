@@ -1,0 +1,341 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "774": [
+      774
+    ],
+    "17896441": [
+      869,
+      401
+    ],
+    "main": [
+      354,
+      869,
+      792
+    ],
+    "runtime~main": [
+      792,
+      869,
+      354
+    ],
+    "0ba1da2d": [
+      108
+    ],
+    "0e384e19": [
+      976
+    ],
+    "1be78505": [
+      869,
+      774
+    ],
+    "31015eea": [
+      418
+    ],
+    "3e2a5caa": [
+      98
+    ],
+    "52f49525": [
+      481
+    ],
+    "54f44165": [
+      924
+    ],
+    "588bd741": [
+      324
+    ],
+    "645f88b0": [
+      982
+    ],
+    "65df3d35": [
+      559
+    ],
+    "6870cd6b": [
+      717
+    ],
+    "6893e07a": [
+      550
+    ],
+    "7b105ffe": [
+      169
+    ],
+    "8edb9aa9": [
+      616
+    ],
+    "9296da72": [
+      881
+    ],
+    "935f2afb": [
+      581
+    ],
+    "a62b5dde": [
+      744
+    ],
+    "a799794f": [
+      175
+    ],
+    "b0119580": [
+      37
+    ],
+    "b7b7dd45": [
+      426
+    ],
+    "bf267060": [
+      172
+    ],
+    "c4f5d8e4": [
+      869,
+      634
+    ],
+    "styles": [
+      354,
+      401,
+      634,
+      714,
+      792,
+      869
+    ]
+  },
+  "assets": {
+    "37": {
+      "js": [
+        {
+          "file": "assets/js/b0119580.ecd0e63a.js",
+          "hash": "5e46aaa9b2cb521d",
+          "publicPath": "/shadow-dom-survey/assets/js/b0119580.ecd0e63a.js"
+        }
+      ]
+    },
+    "98": {
+      "js": [
+        {
+          "file": "assets/js/3e2a5caa.6cfc4d18.js",
+          "hash": "77e4a9fc55072365",
+          "publicPath": "/shadow-dom-survey/assets/js/3e2a5caa.6cfc4d18.js"
+        }
+      ]
+    },
+    "108": {
+      "js": [
+        {
+          "file": "assets/js/0ba1da2d.2e8f03e1.js",
+          "hash": "cbbc55e43a21471b",
+          "publicPath": "/shadow-dom-survey/assets/js/0ba1da2d.2e8f03e1.js"
+        }
+      ]
+    },
+    "169": {
+      "js": [
+        {
+          "file": "assets/js/7b105ffe.c2949dd0.js",
+          "hash": "fa4388eca88f3f57",
+          "publicPath": "/shadow-dom-survey/assets/js/7b105ffe.c2949dd0.js"
+        }
+      ]
+    },
+    "172": {
+      "js": [
+        {
+          "file": "assets/js/bf267060.08a8290a.js",
+          "hash": "9f1c65d32d30debe",
+          "publicPath": "/shadow-dom-survey/assets/js/bf267060.08a8290a.js"
+        }
+      ]
+    },
+    "175": {
+      "js": [
+        {
+          "file": "assets/js/a799794f.a7af2e17.js",
+          "hash": "d46b485069b4ddc8",
+          "publicPath": "/shadow-dom-survey/assets/js/a799794f.a7af2e17.js"
+        }
+      ]
+    },
+    "324": {
+      "js": [
+        {
+          "file": "assets/js/588bd741.7af57e07.js",
+          "hash": "470c166da0bdaae6",
+          "publicPath": "/shadow-dom-survey/assets/js/588bd741.7af57e07.js"
+        }
+      ]
+    },
+    "354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.5481fe01.js",
+          "hash": "3fa191f7a0ecc329",
+          "publicPath": "/shadow-dom-survey/assets/js/runtime~main.5481fe01.js"
+        }
+      ]
+    },
+    "401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.33c9b297.js",
+          "hash": "d2fb26663ec24b16",
+          "publicPath": "/shadow-dom-survey/assets/js/17896441.33c9b297.js"
+        }
+      ]
+    },
+    "418": {
+      "js": [
+        {
+          "file": "assets/js/31015eea.df349249.js",
+          "hash": "38ef4d3979f28c96",
+          "publicPath": "/shadow-dom-survey/assets/js/31015eea.df349249.js"
+        }
+      ]
+    },
+    "426": {
+      "js": [
+        {
+          "file": "assets/js/b7b7dd45.c8ea4eff.js",
+          "hash": "187fcd4477cde340",
+          "publicPath": "/shadow-dom-survey/assets/js/b7b7dd45.c8ea4eff.js"
+        }
+      ]
+    },
+    "481": {
+      "js": [
+        {
+          "file": "assets/js/52f49525.60a6502a.js",
+          "hash": "22905b2dc0f18b50",
+          "publicPath": "/shadow-dom-survey/assets/js/52f49525.60a6502a.js"
+        }
+      ]
+    },
+    "550": {
+      "js": [
+        {
+          "file": "assets/js/6893e07a.65fc89c8.js",
+          "hash": "47e4e2036897b1bf",
+          "publicPath": "/shadow-dom-survey/assets/js/6893e07a.65fc89c8.js"
+        }
+      ]
+    },
+    "559": {
+      "js": [
+        {
+          "file": "assets/js/65df3d35.6b656c83.js",
+          "hash": "b8a7f50724b8bae5",
+          "publicPath": "/shadow-dom-survey/assets/js/65df3d35.6b656c83.js"
+        }
+      ]
+    },
+    "581": {
+      "js": [
+        {
+          "file": "assets/js/935f2afb.5482ccad.js",
+          "hash": "7839c6a04ad26cea",
+          "publicPath": "/shadow-dom-survey/assets/js/935f2afb.5482ccad.js"
+        }
+      ]
+    },
+    "616": {
+      "js": [
+        {
+          "file": "assets/js/8edb9aa9.53025125.js",
+          "hash": "83b8651f0bd602e9",
+          "publicPath": "/shadow-dom-survey/assets/js/8edb9aa9.53025125.js"
+        }
+      ]
+    },
+    "634": {
+      "js": [
+        {
+          "file": "assets/js/c4f5d8e4.e1e9b68e.js",
+          "hash": "7a8b746ebad60811",
+          "publicPath": "/shadow-dom-survey/assets/js/c4f5d8e4.e1e9b68e.js"
+        }
+      ]
+    },
+    "717": {
+      "js": [
+        {
+          "file": "assets/js/6870cd6b.9610d34f.js",
+          "hash": "8f65ab8de152b188",
+          "publicPath": "/shadow-dom-survey/assets/js/6870cd6b.9610d34f.js"
+        }
+      ]
+    },
+    "744": {
+      "js": [
+        {
+          "file": "assets/js/a62b5dde.2364f6a9.js",
+          "hash": "0fe005f2886f37b3",
+          "publicPath": "/shadow-dom-survey/assets/js/a62b5dde.2364f6a9.js"
+        }
+      ]
+    },
+    "774": {
+      "js": [
+        {
+          "file": "assets/js/774.c0e001fe.js",
+          "hash": "b6f1a0906343aefb",
+          "publicPath": "/shadow-dom-survey/assets/js/774.c0e001fe.js"
+        },
+        {
+          "file": "assets/js/1be78505.5f20002d.js",
+          "hash": "e9e45e0444fc9b32",
+          "publicPath": "/shadow-dom-survey/assets/js/1be78505.5f20002d.js"
+        }
+      ]
+    },
+    "792": {
+      "js": [
+        {
+          "file": "assets/js/main.2c692f44.js",
+          "hash": "9ad15d737810abd1",
+          "publicPath": "/shadow-dom-survey/assets/js/main.2c692f44.js"
+        }
+      ]
+    },
+    "869": {
+      "css": [
+        {
+          "file": "assets/css/styles.a4db2060.css",
+          "hash": "781946cecb5ee1aa",
+          "publicPath": "/shadow-dom-survey/assets/css/styles.a4db2060.css"
+        }
+      ]
+    },
+    "881": {
+      "js": [
+        {
+          "file": "assets/js/9296da72.86784593.js",
+          "hash": "ef44f720f89d529e",
+          "publicPath": "/shadow-dom-survey/assets/js/9296da72.86784593.js"
+        }
+      ]
+    },
+    "924": {
+      "js": [
+        {
+          "file": "assets/js/54f44165.c02c6950.js",
+          "hash": "92b9d512a29fd3fa",
+          "publicPath": "/shadow-dom-survey/assets/js/54f44165.c02c6950.js"
+        }
+      ]
+    },
+    "976": {
+      "js": [
+        {
+          "file": "assets/js/0e384e19.a29487a3.js",
+          "hash": "46790d38c2d174bb",
+          "publicPath": "/shadow-dom-survey/assets/js/0e384e19.a29487a3.js"
+        }
+      ]
+    },
+    "982": {
+      "js": [
+        {
+          "file": "assets/js/645f88b0.ff603ce2.js",
+          "hash": "c0636cae1d1a1131",
+          "publicPath": "/shadow-dom-survey/assets/js/645f88b0.ff603ce2.js"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "unversionedId": "contributing/guidelines",
+  "id": "contributing/guidelines",
+  "title": "Contribution Guidelines",
+  "description": "Thank you for your interest in contributing to Shadow DOM Survey! This document outlines the process for contributing to the project and the standards we expect from contributors.",
+  "source": "@site/docs/contributing/guidelines.md",
+  "sourceDirName": "contributing",
+  "slug": "/contributing/guidelines",
+  "permalink": "/shadow-dom-survey/docs/contributing/guidelines",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/contributing/guidelines.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SurveyReader API",
+    "permalink": "/shadow-dom-survey/docs/api/reader-api"
+  }
+}

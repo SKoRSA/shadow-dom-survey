@@ -1,0 +1,27 @@
+{
+  "unversionedId": "question-types/multi-line-text",
+  "id": "question-types/multi-line-text",
+  "title": "Multi-line Text Questions",
+  "description": "Multi-line text questions provide a textarea input field for collecting longer text responses from users. These are ideal for gathering detailed information, comments, feedback, or any response that may require multiple sentences or paragraphs.",
+  "source": "@site/docs/question-types/multi-line-text.md",
+  "sourceDirName": "question-types",
+  "slug": "/question-types/multi-line-text",
+  "permalink": "/shadow-dom-survey/docs/question-types/multi-line-text",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/multi-line-text.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Single Line Text Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/single-line-text"
+  },
+  "next": {
+    "title": "Single Choice Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/single-choice"
+  }
+}

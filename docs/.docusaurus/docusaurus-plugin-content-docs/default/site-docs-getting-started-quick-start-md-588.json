@@ -1,0 +1,27 @@
+{
+  "unversionedId": "getting-started/quick-start",
+  "id": "getting-started/quick-start",
+  "title": "Quick Start",
+  "description": "This guide will help you create a functional survey system with the SurveyBuilder and SurveyReader components, following their actual implementations.",
+  "source": "@site/docs/getting-started/quick-start.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/quick-start",
+  "permalink": "/shadow-dom-survey/docs/getting-started/quick-start",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/getting-started/quick-start.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/shadow-dom-survey/docs/getting-started/installation"
+  },
+  "next": {
+    "title": "Survey Builder Component",
+    "permalink": "/shadow-dom-survey/docs/components/survey-builder"
+  }
+}

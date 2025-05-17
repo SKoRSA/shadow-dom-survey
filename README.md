@@ -128,9 +128,14 @@ The components are compatible with all modern browsers that support Shadow DOM:
 - Safari 10.1+
 - Edge 79+
 
-## Demo
+## Examples & Demos
 
-See `integration-demo.html` for a complete working example of both components.
+Check out the `docs/examples` directory for working examples:
+
+1. `basic-usage.html` - A simple implementation with minimal configuration
+2. `advanced-demo.html` - A comprehensive demo with workflow steps, multilingual support, and response tracking
+
+You can also visit our [live demos](https://skorsa.github.io/shadow-dom-survey/examples/) to see the components in action.
 
 ## License
 

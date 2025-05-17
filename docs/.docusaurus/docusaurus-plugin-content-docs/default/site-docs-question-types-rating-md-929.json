@@ -1,0 +1,27 @@
+{
+  "unversionedId": "question-types/rating",
+  "id": "question-types/rating",
+  "title": "Rating Questions",
+  "description": "Rating questions allow respondents to select a value on a numeric scale, making them ideal for measuring satisfaction, agreement, or other graduated responses.",
+  "source": "@site/docs/question-types/rating.md",
+  "sourceDirName": "question-types",
+  "slug": "/question-types/rating",
+  "permalink": "/shadow-dom-survey/docs/question-types/rating",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/rating.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dropdown Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/dropdown"
+  },
+  "next": {
+    "title": "Matrix Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/matrix"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "getting-started/installation",
+  "id": "getting-started/installation",
+  "title": "Installation",
+  "description": "Shadow DOM Survey components can be easily integrated into any web project. This guide covers how to install and initialize both the SurveyBuilder and SurveyReader components following their actual implementation requirements.",
+  "source": "@site/docs/getting-started/installation.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/installation",
+  "permalink": "/shadow-dom-survey/docs/getting-started/installation",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/getting-started/installation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/shadow-dom-survey/docs/intro"
+  },
+  "next": {
+    "title": "Quick Start",
+    "permalink": "/shadow-dom-survey/docs/getting-started/quick-start"
+  }
+}

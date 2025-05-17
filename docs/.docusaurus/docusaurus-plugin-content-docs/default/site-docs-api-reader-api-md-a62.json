@@ -1,0 +1,27 @@
+{
+  "unversionedId": "api/reader-api",
+  "id": "api/reader-api",
+  "title": "SurveyReader API",
+  "description": "The SurveyReader component renders surveys and collects responses from users. This component is built using Shadow DOM for complete encapsulation from the rest of your application.",
+  "source": "@site/docs/api/reader-api.md",
+  "sourceDirName": "api",
+  "slug": "/api/reader-api",
+  "permalink": "/shadow-dom-survey/docs/api/reader-api",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/api/reader-api.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SurveyBuilder API",
+    "permalink": "/shadow-dom-survey/docs/api/builder-api"
+  },
+  "next": {
+    "title": "Contribution Guidelines",
+    "permalink": "/shadow-dom-survey/docs/contributing/guidelines"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "question-types/dropdown",
+  "id": "question-types/dropdown",
+  "title": "Dropdown Questions",
+  "description": "Dropdown questions provide a space-efficient way to present many options through a select menu. They are ideal for questions with many possible answers or when you want to save space in your survey layout.",
+  "source": "@site/docs/question-types/dropdown.md",
+  "sourceDirName": "question-types",
+  "slug": "/question-types/dropdown",
+  "permalink": "/shadow-dom-survey/docs/question-types/dropdown",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/dropdown.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Multiple Choice Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/multiple-choice"
+  },
+  "next": {
+    "title": "Rating Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/rating"
+  }
+}

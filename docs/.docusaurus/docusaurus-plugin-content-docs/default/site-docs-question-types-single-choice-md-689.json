@@ -1,0 +1,27 @@
+{
+  "unversionedId": "question-types/single-choice",
+  "id": "question-types/single-choice",
+  "title": "Single Choice Questions",
+  "description": "Single choice questions (also known as radio button questions) allow respondents to select exactly one option from a list of choices.",
+  "source": "@site/docs/question-types/single-choice.md",
+  "sourceDirName": "question-types",
+  "slug": "/question-types/single-choice",
+  "permalink": "/shadow-dom-survey/docs/question-types/single-choice",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/single-choice.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Multi-line Text Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/multi-line-text"
+  },
+  "next": {
+    "title": "Multiple Choice Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/multiple-choice"
+  }
+}

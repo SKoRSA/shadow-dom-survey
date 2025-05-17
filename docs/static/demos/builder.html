@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Builder Demo</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .demo-container {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+
+      .controls {
+        background: #f5f5f5;
+        padding: 15px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+      }
+
+      .controls label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      button {
+        background: #4a6cf7;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+        font-size: 14px;
+      }
+
+      button:hover {
+        background: #3a5ce7;
+      }
+
+      pre {
+        background: #f0f0f0;
+        padding: 15px;
+        border-radius: 4px;
+        overflow: auto;
+        max-height: 200px;
+        font-size: 13px;
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <label>
+        <input type="checkbox" id="arabicToggle" /> Arabic Interface
+      </label>
+      <button id="getData">Get Data</button>
+      <button id="loadSample">Load Sample Survey</button>
+      <button id="resetBuilder">Reset</button>
+    </div>
+
+    <div class="demo-container">
+      <div id="surveyBuilder"></div>
+    </div>
+
+    <h3>Current Survey Data:</h3>
+    <pre id="dataOutput">No data yet</pre>
+
+    <script src="../js/builder-embed.js"></script>
+    <script>
+      // Initialize the builder
+      let builder = new SurveyBuilder("#surveyBuilder", {
+        isEnglish: true,
+        onSave: async (data) => {
+          document.getElementById("dataOutput").textContent = JSON.stringify(
+            data,
+            null,
+            2
+          );
+          return data;
+        },
+      });
+
+      // Handle language toggle
+      document
+        .getElementById("arabicToggle")
+        .addEventListener("change", function (e) {
+          // Destroy and recreate with new language setting
+          builder.destroy();
+          builder = new SurveyBuilder("#surveyBuilder", {
+            isEnglish: !e.target.checked,
+            onSave: async (data) => {
+              document.getElementById("dataOutput").textContent =
+                JSON.stringify(data, null, 2);
+              return data;
+            },
+          });
+        });
+
+      // Handle getData button
+      document.getElementById("getData").addEventListener("click", function () {
+        const data = builder.getData();
+        document.getElementById("dataOutput").textContent = JSON.stringify(
+          data,
+          null,
+          2
+        );
+      });
+
+      // Handle sample data button
+      document
+        .getElementById("loadSample")
+        .addEventListener("click", function () {
+          const sampleData = {
+            title: "Customer Satisfaction Survey",
+            description: "Please help us improve our services",
+            question: {
+              type: "singleChoice",
+              text: "How satisfied are you with our service?",
+              settings: { required: true },
+              options: [
+                "Very Satisfied",
+                "Satisfied",
+                "Neutral",
+                "Dissatisfied",
+                "Very Dissatisfied",
+              ],
+            },
+          };
+          builder.setData(sampleData);
+          document.getElementById("dataOutput").textContent = JSON.stringify(
+            sampleData,
+            null,
+            2
+          );
+        });
+
+      // Handle reset button
+      document
+        .getElementById("resetBuilder")
+        .addEventListener("click", function () {
+          builder.reset();
+          document.getElementById("dataOutput").textContent = "No data yet";
+        });
+    </script>
+  </body>
+</html>

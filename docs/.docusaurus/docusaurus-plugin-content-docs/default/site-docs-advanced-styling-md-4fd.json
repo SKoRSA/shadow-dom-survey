@@ -1,0 +1,27 @@
+{
+  "unversionedId": "advanced/styling",
+  "id": "advanced/styling",
+  "title": "Styling (Coming Soon)",
+  "description": "Information on styling the survey components, including CSS variables and theme customization, will be documented here soon.",
+  "source": "@site/docs/advanced/styling.md",
+  "sourceDirName": "advanced",
+  "slug": "/advanced/styling",
+  "permalink": "/shadow-dom-survey/docs/advanced/styling",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/advanced/styling.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Customization (Coming Soon)",
+    "permalink": "/shadow-dom-survey/docs/advanced/customization"
+  },
+  "next": {
+    "title": "Integration (Coming Soon)",
+    "permalink": "/shadow-dom-survey/docs/advanced/integration"
+  }
+}

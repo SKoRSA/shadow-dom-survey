@@ -1,0 +1,596 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/shadow-dom-survey/docs",
+          "tagsPath": "/shadow-dom-survey/docs/tags",
+          "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs",
+          "editUrlLocalized": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "F:\\Infath\\refactor-builder-component\\stl-version\\v3\\docs\\sidebars.js",
+          "contentPath": "F:\\Infath\\refactor-builder-component\\stl-version\\v3\\docs\\docs",
+          "contentPathLocalized": "F:\\Infath\\refactor-builder-component\\stl-version\\v3\\docs\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "docs": [
+            {
+              "unversionedId": "api/builder-api",
+              "id": "api/builder-api",
+              "title": "SurveyBuilder API",
+              "description": "The SurveyBuilder component provides a user interface for creating and editing surveys with various question types. This component is built using Shadow DOM for complete encapsulation from the rest of your application.",
+              "source": "@site/docs/api/builder-api.md",
+              "sourceDirName": "api",
+              "slug": "/api/builder-api",
+              "permalink": "/shadow-dom-survey/docs/api/builder-api",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/api/builder-api.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "API Overview",
+                "permalink": "/shadow-dom-survey/docs/api/overview"
+              },
+              "next": {
+                "title": "SurveyReader API",
+                "permalink": "/shadow-dom-survey/docs/api/reader-api"
+              }
+            },
+            {
+              "unversionedId": "api/overview",
+              "id": "api/overview",
+              "title": "API Overview",
+              "description": "Shadow DOM Survey provides two main components, each with its own API:",
+              "source": "@site/docs/api/overview.md",
+              "sourceDirName": "api",
+              "slug": "/api/overview",
+              "permalink": "/shadow-dom-survey/docs/api/overview",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/api/overview.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Matrix Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/matrix"
+              },
+              "next": {
+                "title": "SurveyBuilder API",
+                "permalink": "/shadow-dom-survey/docs/api/builder-api"
+              }
+            },
+            {
+              "unversionedId": "api/reader-api",
+              "id": "api/reader-api",
+              "title": "SurveyReader API",
+              "description": "The SurveyReader component renders surveys and collects responses from users. This component is built using Shadow DOM for complete encapsulation from the rest of your application.",
+              "source": "@site/docs/api/reader-api.md",
+              "sourceDirName": "api",
+              "slug": "/api/reader-api",
+              "permalink": "/shadow-dom-survey/docs/api/reader-api",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/api/reader-api.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "SurveyBuilder API",
+                "permalink": "/shadow-dom-survey/docs/api/builder-api"
+              },
+              "next": {
+                "title": "Contribution Guidelines",
+                "permalink": "/shadow-dom-survey/docs/contributing/guidelines"
+              }
+            },
+            {
+              "unversionedId": "components/survey-builder",
+              "id": "components/survey-builder",
+              "title": "Survey Builder Component",
+              "description": "The Survey Builder component provides an intuitive interface for creating and editing surveys with various question types. This component is encapsulated using Shadow DOM for complete isolation from your website's styles.",
+              "source": "@site/docs/components/survey-builder.md",
+              "sourceDirName": "components",
+              "slug": "/components/survey-builder",
+              "permalink": "/shadow-dom-survey/docs/components/survey-builder",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/components/survey-builder.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Quick Start",
+                "permalink": "/shadow-dom-survey/docs/getting-started/quick-start"
+              },
+              "next": {
+                "title": "Survey Reader Component",
+                "permalink": "/shadow-dom-survey/docs/components/survey-reader"
+              }
+            },
+            {
+              "unversionedId": "components/survey-reader",
+              "id": "components/survey-reader",
+              "title": "Survey Reader Component",
+              "description": "The Survey Reader component displays surveys to end-users and collects their responses. Like the builder, it's fully encapsulated using Shadow DOM to ensure consistent rendering regardless of your website's styles.",
+              "source": "@site/docs/components/survey-reader.md",
+              "sourceDirName": "components",
+              "slug": "/components/survey-reader",
+              "permalink": "/shadow-dom-survey/docs/components/survey-reader",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/components/survey-reader.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Survey Builder Component",
+                "permalink": "/shadow-dom-survey/docs/components/survey-builder"
+              },
+              "next": {
+                "title": "Single Line Text Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/single-line-text"
+              }
+            },
+            {
+              "unversionedId": "contributing/guidelines",
+              "id": "contributing/guidelines",
+              "title": "Contribution Guidelines",
+              "description": "Thank you for your interest in contributing to Shadow DOM Survey! This document outlines the process for contributing to the project and the standards we expect from contributors.",
+              "source": "@site/docs/contributing/guidelines.md",
+              "sourceDirName": "contributing",
+              "slug": "/contributing/guidelines",
+              "permalink": "/shadow-dom-survey/docs/contributing/guidelines",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/contributing/guidelines.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "SurveyReader API",
+                "permalink": "/shadow-dom-survey/docs/api/reader-api"
+              }
+            },
+            {
+              "unversionedId": "getting-started/installation",
+              "id": "getting-started/installation",
+              "title": "Installation",
+              "description": "Shadow DOM Survey components can be easily integrated into any web project. This guide covers how to install and initialize both the SurveyBuilder and SurveyReader components following their actual implementation requirements.",
+              "source": "@site/docs/getting-started/installation.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/installation",
+              "permalink": "/shadow-dom-survey/docs/getting-started/installation",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/getting-started/installation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/shadow-dom-survey/docs/intro"
+              },
+              "next": {
+                "title": "Quick Start",
+                "permalink": "/shadow-dom-survey/docs/getting-started/quick-start"
+              }
+            },
+            {
+              "unversionedId": "getting-started/quick-start",
+              "id": "getting-started/quick-start",
+              "title": "Quick Start",
+              "description": "This guide will help you create a functional survey system with the SurveyBuilder and SurveyReader components, following their actual implementations.",
+              "source": "@site/docs/getting-started/quick-start.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/quick-start",
+              "permalink": "/shadow-dom-survey/docs/getting-started/quick-start",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/getting-started/quick-start.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/shadow-dom-survey/docs/getting-started/installation"
+              },
+              "next": {
+                "title": "Survey Builder Component",
+                "permalink": "/shadow-dom-survey/docs/components/survey-builder"
+              }
+            },
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "title": "Introduction",
+              "description": "Welcome to the Shadow DOM Survey documentation!",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/shadow-dom-survey/docs/intro",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/intro.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "docs",
+              "next": {
+                "title": "Installation",
+                "permalink": "/shadow-dom-survey/docs/getting-started/installation"
+              }
+            },
+            {
+              "unversionedId": "question-types/dropdown",
+              "id": "question-types/dropdown",
+              "title": "Dropdown Questions",
+              "description": "Dropdown questions provide a space-efficient way to present many options through a select menu. They are ideal for questions with many possible answers or when you want to save space in your survey layout.",
+              "source": "@site/docs/question-types/dropdown.md",
+              "sourceDirName": "question-types",
+              "slug": "/question-types/dropdown",
+              "permalink": "/shadow-dom-survey/docs/question-types/dropdown",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/dropdown.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Multiple Choice Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/multiple-choice"
+              },
+              "next": {
+                "title": "Rating Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/rating"
+              }
+            },
+            {
+              "unversionedId": "question-types/matrix",
+              "id": "question-types/matrix",
+              "title": "Matrix Questions",
+              "description": "Matrix questions allow you to ask multiple related questions with the same set of answer options, organized in a grid format. This question type is efficient for collecting ratings or opinions across multiple dimensions or criteria.",
+              "source": "@site/docs/question-types/matrix.md",
+              "sourceDirName": "question-types",
+              "slug": "/question-types/matrix",
+              "permalink": "/shadow-dom-survey/docs/question-types/matrix",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/matrix.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Rating Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/rating"
+              },
+              "next": {
+                "title": "API Overview",
+                "permalink": "/shadow-dom-survey/docs/api/overview"
+              }
+            },
+            {
+              "unversionedId": "question-types/multi-line-text",
+              "id": "question-types/multi-line-text",
+              "title": "Multi-line Text Questions",
+              "description": "Multi-line text questions provide a textarea input field for collecting longer text responses from users. These are ideal for gathering detailed information, comments, feedback, or any response that may require multiple sentences or paragraphs.",
+              "source": "@site/docs/question-types/multi-line-text.md",
+              "sourceDirName": "question-types",
+              "slug": "/question-types/multi-line-text",
+              "permalink": "/shadow-dom-survey/docs/question-types/multi-line-text",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/multi-line-text.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Single Line Text Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/single-line-text"
+              },
+              "next": {
+                "title": "Single Choice Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/single-choice"
+              }
+            },
+            {
+              "unversionedId": "question-types/multiple-choice",
+              "id": "question-types/multiple-choice",
+              "title": "Multiple Choice Questions",
+              "description": "Multiple choice questions allow respondents to select one or more options from a predefined list. This question type is ideal for scenarios where multiple selections are valid, such as \"Select all that apply\" questions.",
+              "source": "@site/docs/question-types/multiple-choice.md",
+              "sourceDirName": "question-types",
+              "slug": "/question-types/multiple-choice",
+              "permalink": "/shadow-dom-survey/docs/question-types/multiple-choice",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/multiple-choice.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Single Choice Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/single-choice"
+              },
+              "next": {
+                "title": "Dropdown Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/dropdown"
+              }
+            },
+            {
+              "unversionedId": "question-types/rating",
+              "id": "question-types/rating",
+              "title": "Rating Questions",
+              "description": "Rating questions allow respondents to select a value on a numeric scale, making them ideal for measuring satisfaction, agreement, or other graduated responses.",
+              "source": "@site/docs/question-types/rating.md",
+              "sourceDirName": "question-types",
+              "slug": "/question-types/rating",
+              "permalink": "/shadow-dom-survey/docs/question-types/rating",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/rating.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Dropdown Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/dropdown"
+              },
+              "next": {
+                "title": "Matrix Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/matrix"
+              }
+            },
+            {
+              "unversionedId": "question-types/single-choice",
+              "id": "question-types/single-choice",
+              "title": "Single Choice Questions",
+              "description": "Single choice questions (also known as radio button questions) allow respondents to select exactly one option from a list of choices.",
+              "source": "@site/docs/question-types/single-choice.md",
+              "sourceDirName": "question-types",
+              "slug": "/question-types/single-choice",
+              "permalink": "/shadow-dom-survey/docs/question-types/single-choice",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/single-choice.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Multi-line Text Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/multi-line-text"
+              },
+              "next": {
+                "title": "Multiple Choice Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/multiple-choice"
+              }
+            },
+            {
+              "unversionedId": "question-types/single-line-text",
+              "id": "question-types/single-line-text",
+              "title": "Single Line Text Questions",
+              "description": "Single line text questions provide a simple text input field for collecting short text responses from users. These are ideal for collecting simple information like names, email addresses, or short answers.",
+              "source": "@site/docs/question-types/single-line-text.md",
+              "sourceDirName": "question-types",
+              "slug": "/question-types/single-line-text",
+              "permalink": "/shadow-dom-survey/docs/question-types/single-line-text",
+              "draft": false,
+              "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/single-line-text.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Survey Reader Component",
+                "permalink": "/shadow-dom-survey/docs/components/survey-reader"
+              },
+              "next": {
+                "title": "Multi-line Text Questions",
+                "permalink": "/shadow-dom-survey/docs/question-types/multi-line-text"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "docs": [
+              {
+                "type": "category",
+                "label": "Introduction",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "intro"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Getting Started",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "getting-started/installation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/quick-start"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Components",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "components/survey-builder"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "components/survey-reader"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Question Types",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "question-types/single-line-text"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "question-types/multi-line-text"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "question-types/single-choice"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "question-types/multiple-choice"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "question-types/dropdown"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "question-types/rating"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "question-types/matrix"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "API Reference",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/overview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/builder-api"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/reader-api"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Contributing",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "contributing/guidelines"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/shadow-dom-survey/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/shadow-dom-survey/demo",
+        "source": "@site/src/pages/demo.js"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/shadow-dom-survey/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

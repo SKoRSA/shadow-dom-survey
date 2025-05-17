@@ -1,0 +1,27 @@
+{
+  "unversionedId": "components/survey-builder",
+  "id": "components/survey-builder",
+  "title": "Survey Builder Component",
+  "description": "The Survey Builder component provides an intuitive interface for creating and editing surveys with various question types. This component is encapsulated using Shadow DOM for complete isolation from your website's styles.",
+  "source": "@site/docs/components/survey-builder.md",
+  "sourceDirName": "components",
+  "slug": "/components/survey-builder",
+  "permalink": "/shadow-dom-survey/docs/components/survey-builder",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/components/survey-builder.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Quick Start",
+    "permalink": "/shadow-dom-survey/docs/getting-started/quick-start"
+  },
+  "next": {
+    "title": "Survey Reader Component",
+    "permalink": "/shadow-dom-survey/docs/components/survey-reader"
+  }
+}

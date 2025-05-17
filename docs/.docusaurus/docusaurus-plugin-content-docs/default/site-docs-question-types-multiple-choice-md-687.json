@@ -1,0 +1,27 @@
+{
+  "unversionedId": "question-types/multiple-choice",
+  "id": "question-types/multiple-choice",
+  "title": "Multiple Choice Questions",
+  "description": "Multiple choice questions allow respondents to select one or more options from a predefined list. This question type is ideal for scenarios where multiple selections are valid, such as \"Select all that apply\" questions.",
+  "source": "@site/docs/question-types/multiple-choice.md",
+  "sourceDirName": "question-types",
+  "slug": "/question-types/multiple-choice",
+  "permalink": "/shadow-dom-survey/docs/question-types/multiple-choice",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/multiple-choice.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Single Choice Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/single-choice"
+  },
+  "next": {
+    "title": "Dropdown Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/dropdown"
+  }
+}

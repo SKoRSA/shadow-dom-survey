@@ -15,12 +15,16 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16.x"
+      - name: Install dependencies
+        run: npm ci
       - name: Validate JavaScript files
         run: |
           echo "Validating JavaScript files..."
           find . -name "*.js" -not -path "./node_modules/*" -exec echo "Checking {}" \;
           # Simple syntax check for JS files
           find . -name "*.js" -not -path "./node_modules/*" -exec node -c {} \; || echo "JavaScript validation completed"
+      - name: Minify JavaScript files
+        run: npm run build
       - name: Verify file structure
         run: |
           echo "Verifying repository structure..."
@@ -28,3 +32,27 @@ jobs:
           ls -la builder-embed/
           ls -la reader-embed/
           echo "Repository structure validation completed"
+
+  deploy-docs:
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+      - name: Install docs dependencies
+        run: |
+          cd docs
+          npm ci
+      - name: Build documentation
+        run: |
+          cd docs
+          npm run build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs/build
+          branch: gh-pages

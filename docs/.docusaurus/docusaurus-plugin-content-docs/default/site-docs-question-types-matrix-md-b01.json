@@ -1,0 +1,27 @@
+{
+  "unversionedId": "question-types/matrix",
+  "id": "question-types/matrix",
+  "title": "Matrix Questions",
+  "description": "Matrix questions allow you to ask multiple related questions with the same set of answer options, organized in a grid format. This question type is efficient for collecting ratings or opinions across multiple dimensions or criteria.",
+  "source": "@site/docs/question-types/matrix.md",
+  "sourceDirName": "question-types",
+  "slug": "/question-types/matrix",
+  "permalink": "/shadow-dom-survey/docs/question-types/matrix",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/matrix.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Rating Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/rating"
+  },
+  "next": {
+    "title": "API Overview",
+    "permalink": "/shadow-dom-survey/docs/api/overview"
+  }
+}

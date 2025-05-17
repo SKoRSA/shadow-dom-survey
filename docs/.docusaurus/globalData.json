@@ -1,0 +1,108 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/shadow-dom-survey/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/shadow-dom-survey/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "api/builder-api",
+              "path": "/shadow-dom-survey/docs/api/builder-api",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/overview",
+              "path": "/shadow-dom-survey/docs/api/overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/reader-api",
+              "path": "/shadow-dom-survey/docs/api/reader-api",
+              "sidebar": "docs"
+            },
+            {
+              "id": "components/survey-builder",
+              "path": "/shadow-dom-survey/docs/components/survey-builder",
+              "sidebar": "docs"
+            },
+            {
+              "id": "components/survey-reader",
+              "path": "/shadow-dom-survey/docs/components/survey-reader",
+              "sidebar": "docs"
+            },
+            {
+              "id": "contributing/guidelines",
+              "path": "/shadow-dom-survey/docs/contributing/guidelines",
+              "sidebar": "docs"
+            },
+            {
+              "id": "getting-started/installation",
+              "path": "/shadow-dom-survey/docs/getting-started/installation",
+              "sidebar": "docs"
+            },
+            {
+              "id": "getting-started/quick-start",
+              "path": "/shadow-dom-survey/docs/getting-started/quick-start",
+              "sidebar": "docs"
+            },
+            {
+              "id": "intro",
+              "path": "/shadow-dom-survey/docs/intro",
+              "sidebar": "docs"
+            },
+            {
+              "id": "question-types/dropdown",
+              "path": "/shadow-dom-survey/docs/question-types/dropdown",
+              "sidebar": "docs"
+            },
+            {
+              "id": "question-types/matrix",
+              "path": "/shadow-dom-survey/docs/question-types/matrix",
+              "sidebar": "docs"
+            },
+            {
+              "id": "question-types/multi-line-text",
+              "path": "/shadow-dom-survey/docs/question-types/multi-line-text",
+              "sidebar": "docs"
+            },
+            {
+              "id": "question-types/multiple-choice",
+              "path": "/shadow-dom-survey/docs/question-types/multiple-choice",
+              "sidebar": "docs"
+            },
+            {
+              "id": "question-types/rating",
+              "path": "/shadow-dom-survey/docs/question-types/rating",
+              "sidebar": "docs"
+            },
+            {
+              "id": "question-types/single-choice",
+              "path": "/shadow-dom-survey/docs/question-types/single-choice",
+              "sidebar": "docs"
+            },
+            {
+              "id": "question-types/single-line-text",
+              "path": "/shadow-dom-survey/docs/question-types/single-line-text",
+              "sidebar": "docs"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docs": {
+              "link": {
+                "path": "/shadow-dom-survey/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "docs": [
+      {
+        "type": "category",
+        "label": "Introduction",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/shadow-dom-survey/docs/intro",
+            "docId": "intro"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Installation",
+            "href": "/shadow-dom-survey/docs/getting-started/installation",
+            "docId": "getting-started/installation"
+          },
+          {
+            "type": "link",
+            "label": "Quick Start",
+            "href": "/shadow-dom-survey/docs/getting-started/quick-start",
+            "docId": "getting-started/quick-start"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Components",
+        "items": [
+          {
+            "type": "link",
+            "label": "Survey Builder Component",
+            "href": "/shadow-dom-survey/docs/components/survey-builder",
+            "docId": "components/survey-builder"
+          },
+          {
+            "type": "link",
+            "label": "Survey Reader Component",
+            "href": "/shadow-dom-survey/docs/components/survey-reader",
+            "docId": "components/survey-reader"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Question Types",
+        "items": [
+          {
+            "type": "link",
+            "label": "Single Line Text Questions",
+            "href": "/shadow-dom-survey/docs/question-types/single-line-text",
+            "docId": "question-types/single-line-text"
+          },
+          {
+            "type": "link",
+            "label": "Multi-line Text Questions",
+            "href": "/shadow-dom-survey/docs/question-types/multi-line-text",
+            "docId": "question-types/multi-line-text"
+          },
+          {
+            "type": "link",
+            "label": "Single Choice Questions",
+            "href": "/shadow-dom-survey/docs/question-types/single-choice",
+            "docId": "question-types/single-choice"
+          },
+          {
+            "type": "link",
+            "label": "Multiple Choice Questions",
+            "href": "/shadow-dom-survey/docs/question-types/multiple-choice",
+            "docId": "question-types/multiple-choice"
+          },
+          {
+            "type": "link",
+            "label": "Dropdown Questions",
+            "href": "/shadow-dom-survey/docs/question-types/dropdown",
+            "docId": "question-types/dropdown"
+          },
+          {
+            "type": "link",
+            "label": "Rating Questions",
+            "href": "/shadow-dom-survey/docs/question-types/rating",
+            "docId": "question-types/rating"
+          },
+          {
+            "type": "link",
+            "label": "Matrix Questions",
+            "href": "/shadow-dom-survey/docs/question-types/matrix",
+            "docId": "question-types/matrix"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "API Reference",
+        "items": [
+          {
+            "type": "link",
+            "label": "API Overview",
+            "href": "/shadow-dom-survey/docs/api/overview",
+            "docId": "api/overview"
+          },
+          {
+            "type": "link",
+            "label": "SurveyBuilder API",
+            "href": "/shadow-dom-survey/docs/api/builder-api",
+            "docId": "api/builder-api"
+          },
+          {
+            "type": "link",
+            "label": "SurveyReader API",
+            "href": "/shadow-dom-survey/docs/api/reader-api",
+            "docId": "api/reader-api"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Contributing",
+        "items": [
+          {
+            "type": "link",
+            "label": "Contribution Guidelines",
+            "href": "/shadow-dom-survey/docs/contributing/guidelines",
+            "docId": "contributing/guidelines"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "api/builder-api": {
+      "id": "api/builder-api",
+      "title": "SurveyBuilder API",
+      "description": "The SurveyBuilder component provides a user interface for creating and editing surveys with various question types. This component is built using Shadow DOM for complete encapsulation from the rest of your application.",
+      "sidebar": "docs"
+    },
+    "api/overview": {
+      "id": "api/overview",
+      "title": "API Overview",
+      "description": "Shadow DOM Survey provides two main components, each with its own API:",
+      "sidebar": "docs"
+    },
+    "api/reader-api": {
+      "id": "api/reader-api",
+      "title": "SurveyReader API",
+      "description": "The SurveyReader component renders surveys and collects responses from users. This component is built using Shadow DOM for complete encapsulation from the rest of your application.",
+      "sidebar": "docs"
+    },
+    "components/survey-builder": {
+      "id": "components/survey-builder",
+      "title": "Survey Builder Component",
+      "description": "The Survey Builder component provides an intuitive interface for creating and editing surveys with various question types. This component is encapsulated using Shadow DOM for complete isolation from your website's styles.",
+      "sidebar": "docs"
+    },
+    "components/survey-reader": {
+      "id": "components/survey-reader",
+      "title": "Survey Reader Component",
+      "description": "The Survey Reader component displays surveys to end-users and collects their responses. Like the builder, it's fully encapsulated using Shadow DOM to ensure consistent rendering regardless of your website's styles.",
+      "sidebar": "docs"
+    },
+    "contributing/guidelines": {
+      "id": "contributing/guidelines",
+      "title": "Contribution Guidelines",
+      "description": "Thank you for your interest in contributing to Shadow DOM Survey! This document outlines the process for contributing to the project and the standards we expect from contributors.",
+      "sidebar": "docs"
+    },
+    "getting-started/installation": {
+      "id": "getting-started/installation",
+      "title": "Installation",
+      "description": "Shadow DOM Survey components can be easily integrated into any web project. This guide covers how to install and initialize both the SurveyBuilder and SurveyReader components following their actual implementation requirements.",
+      "sidebar": "docs"
+    },
+    "getting-started/quick-start": {
+      "id": "getting-started/quick-start",
+      "title": "Quick Start",
+      "description": "This guide will help you create a functional survey system with the SurveyBuilder and SurveyReader components, following their actual implementations.",
+      "sidebar": "docs"
+    },
+    "intro": {
+      "id": "intro",
+      "title": "Introduction",
+      "description": "Welcome to the Shadow DOM Survey documentation!",
+      "sidebar": "docs"
+    },
+    "question-types/dropdown": {
+      "id": "question-types/dropdown",
+      "title": "Dropdown Questions",
+      "description": "Dropdown questions provide a space-efficient way to present many options through a select menu. They are ideal for questions with many possible answers or when you want to save space in your survey layout.",
+      "sidebar": "docs"
+    },
+    "question-types/matrix": {
+      "id": "question-types/matrix",
+      "title": "Matrix Questions",
+      "description": "Matrix questions allow you to ask multiple related questions with the same set of answer options, organized in a grid format. This question type is efficient for collecting ratings or opinions across multiple dimensions or criteria.",
+      "sidebar": "docs"
+    },
+    "question-types/multi-line-text": {
+      "id": "question-types/multi-line-text",
+      "title": "Multi-line Text Questions",
+      "description": "Multi-line text questions provide a textarea input field for collecting longer text responses from users. These are ideal for gathering detailed information, comments, feedback, or any response that may require multiple sentences or paragraphs.",
+      "sidebar": "docs"
+    },
+    "question-types/multiple-choice": {
+      "id": "question-types/multiple-choice",
+      "title": "Multiple Choice Questions",
+      "description": "Multiple choice questions allow respondents to select one or more options from a predefined list. This question type is ideal for scenarios where multiple selections are valid, such as \"Select all that apply\" questions.",
+      "sidebar": "docs"
+    },
+    "question-types/rating": {
+      "id": "question-types/rating",
+      "title": "Rating Questions",
+      "description": "Rating questions allow respondents to select a value on a numeric scale, making them ideal for measuring satisfaction, agreement, or other graduated responses.",
+      "sidebar": "docs"
+    },
+    "question-types/single-choice": {
+      "id": "question-types/single-choice",
+      "title": "Single Choice Questions",
+      "description": "Single choice questions (also known as radio button questions) allow respondents to select exactly one option from a list of choices.",
+      "sidebar": "docs"
+    },
+    "question-types/single-line-text": {
+      "id": "question-types/single-line-text",
+      "title": "Single Line Text Questions",
+      "description": "Single line text questions provide a simple text input field for collecting short text responses from users. These are ideal for collecting simple information like names, email addresses, or short answers.",
+      "sidebar": "docs"
+    }
+  }
+}

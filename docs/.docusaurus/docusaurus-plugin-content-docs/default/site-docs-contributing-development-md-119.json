@@ -1,0 +1,18 @@
+{
+  "unversionedId": "contributing/development",
+  "id": "contributing/development",
+  "title": "Development Workflow (Coming Soon)",
+  "description": "Guidelines for setting up the development environment and running tests will be documented here soon.",
+  "source": "@site/docs/contributing/development.md",
+  "sourceDirName": "contributing",
+  "slug": "/contributing/development",
+  "permalink": "/shadow-dom-survey/docs/contributing/development",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/contributing/development.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  }
+}

@@ -1,0 +1,11 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Circle with Shadow Effect -->
+  <circle cx="64" cy="64" r="60" fill="#4F46E5" />
+  
+  <!-- Survey Form Icon (Simplified) -->
+  <rect x="38" y="38" width="52" height="52" rx="6" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Form Lines (Simplified) -->
+  <path d="M48 54H80" stroke="white" stroke-width="6" stroke-linecap="round" />
+  <path d="M48 74H65" stroke="white" stroke-width="6" stroke-linecap="round" />
+</svg> 

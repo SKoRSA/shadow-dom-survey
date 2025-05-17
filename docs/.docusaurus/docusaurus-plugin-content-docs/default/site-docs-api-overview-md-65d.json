@@ -1,0 +1,27 @@
+{
+  "unversionedId": "api/overview",
+  "id": "api/overview",
+  "title": "API Overview",
+  "description": "Shadow DOM Survey provides two main components, each with its own API:",
+  "source": "@site/docs/api/overview.md",
+  "sourceDirName": "api",
+  "slug": "/api/overview",
+  "permalink": "/shadow-dom-survey/docs/api/overview",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/api/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Matrix Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/matrix"
+  },
+  "next": {
+    "title": "SurveyBuilder API",
+    "permalink": "/shadow-dom-survey/docs/api/builder-api"
+  }
+}

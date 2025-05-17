@@ -26,10 +26,14 @@ docs/
 *.md
 !README.md
 !LICENSE
+!CONTRIBUTING.md
 
 # Examples - exclude from npm but include basic example
 examples/*
 !examples/basic-usage.html
 
 # Build source files
-node_modules/ 
+node_modules/
+
+# Integration demo (we'll include it in examples)
+integration-demo.html 

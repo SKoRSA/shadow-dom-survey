@@ -1,0 +1,27 @@
+{
+  "unversionedId": "question-types/single-line-text",
+  "id": "question-types/single-line-text",
+  "title": "Single Line Text Questions",
+  "description": "Single line text questions provide a simple text input field for collecting short text responses from users. These are ideal for collecting simple information like names, email addresses, or short answers.",
+  "source": "@site/docs/question-types/single-line-text.md",
+  "sourceDirName": "question-types",
+  "slug": "/question-types/single-line-text",
+  "permalink": "/shadow-dom-survey/docs/question-types/single-line-text",
+  "draft": false,
+  "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/docs/question-types/single-line-text.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Survey Reader Component",
+    "permalink": "/shadow-dom-survey/docs/components/survey-reader"
+  },
+  "next": {
+    "title": "Multi-line Text Questions",
+    "permalink": "/shadow-dom-survey/docs/question-types/multi-line-text"
+  }
+}
