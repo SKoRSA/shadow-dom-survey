@@ -70,7 +70,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} MAJED AL-ANAZI. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} MAJED AL-ANAZI.`,
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),

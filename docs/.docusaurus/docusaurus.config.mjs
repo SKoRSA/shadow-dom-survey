@@ -75,7 +75,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 MAJED AL-ANAZI. Built with Docusaurus."
+      "copyright": "Copyright © 2025 MAJED AL-ANAZI."
     },
     "prism": {
       "theme": {
