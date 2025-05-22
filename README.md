@@ -175,4 +175,4 @@ MIT License - see the LICENSE file for details.
 ## Author
 
 MAJED AL-ANAZI  
-GitHub: https://github.com/SKoRSA
+GitHub: https://github.com/majed-r

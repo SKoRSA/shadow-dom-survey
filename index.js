@@ -4,7 +4,7 @@
  * @version: 1.0.0
  * @license: MIT
  * @description: A complete survey system with builder and reader components, built with Shadow DOM
- * @Github: https://github.com/SKoRSA
+ * @Github: https://github.com/majed-r
  */
 
 // Import the components

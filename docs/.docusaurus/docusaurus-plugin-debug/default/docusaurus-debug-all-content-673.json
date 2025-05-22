@@ -15,9 +15,9 @@
           "editUrlLocalized": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "F:\\Infath\\refactor-builder-component\\stl-version\\v3\\docs\\sidebars.js",
-          "contentPath": "F:\\Infath\\refactor-builder-component\\stl-version\\v3\\docs\\docs",
-          "contentPathLocalized": "F:\\Infath\\refactor-builder-component\\stl-version\\v3\\docs\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "sidebarFilePath": "F:\\vault\\MAJED\\shadow-dom-survey\\docs\\sidebars.js",
+          "contentPath": "F:\\vault\\MAJED\\shadow-dom-survey\\docs\\docs",
+          "contentPathLocalized": "F:\\vault\\MAJED\\shadow-dom-survey\\docs\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "docs": [
             {
               "unversionedId": "api/builder-api",

@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @license: MIT
  * @description: A self-contained, embeddable survey builder component
- * @Github: https://github.com/SKoRSA
+ * @Github: https://github.com/majed-r
  */
 (function () {
   const styles = `

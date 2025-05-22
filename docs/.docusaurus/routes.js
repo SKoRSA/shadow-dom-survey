@@ -4,47 +4,47 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/shadow-dom-survey/__docusaurus/debug',
-    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug', 'f97'),
+    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug', '357'),
     exact: true
   },
   {
     path: '/shadow-dom-survey/__docusaurus/debug/config',
-    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/config', 'e12'),
+    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/config', '6b7'),
     exact: true
   },
   {
     path: '/shadow-dom-survey/__docusaurus/debug/content',
-    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/content', 'ccb'),
+    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/content', '418'),
     exact: true
   },
   {
     path: '/shadow-dom-survey/__docusaurus/debug/globalData',
-    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/globalData', 'ec5'),
+    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/globalData', '89d'),
     exact: true
   },
   {
     path: '/shadow-dom-survey/__docusaurus/debug/metadata',
-    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/metadata', 'a05'),
+    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/metadata', 'fc4'),
     exact: true
   },
   {
     path: '/shadow-dom-survey/__docusaurus/debug/registry',
-    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/registry', 'aa4'),
+    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/registry', '802'),
     exact: true
   },
   {
     path: '/shadow-dom-survey/__docusaurus/debug/routes',
-    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/routes', 'beb'),
+    component: ComponentCreator('/shadow-dom-survey/__docusaurus/debug/routes', '479'),
     exact: true
   },
   {
     path: '/shadow-dom-survey/demo',
-    component: ComponentCreator('/shadow-dom-survey/demo', '04d'),
+    component: ComponentCreator('/shadow-dom-survey/demo', '189'),
     exact: true
   },
   {
     path: '/shadow-dom-survey/docs',
-    component: ComponentCreator('/shadow-dom-survey/docs', 'b4b'),
+    component: ComponentCreator('/shadow-dom-survey/docs', 'eac'),
     routes: [
       {
         path: '/shadow-dom-survey/docs/api/builder-api',
@@ -146,7 +146,7 @@ export default [
   },
   {
     path: '/shadow-dom-survey/',
-    component: ComponentCreator('/shadow-dom-survey/', '366'),
+    component: ComponentCreator('/shadow-dom-survey/', '22e'),
     exact: true
   },
   {

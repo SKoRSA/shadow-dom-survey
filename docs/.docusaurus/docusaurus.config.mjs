@@ -299,11 +299,11 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "F:\\Infath\\refactor-builder-component\\stl-version\\v3\\docs\\sidebars.js",
+          "sidebarPath": "F:\\vault\\MAJED\\shadow-dom-survey\\docs\\sidebars.js",
           "editUrl": "https://github.com/SKoRSA/shadow-dom-survey/edit/main/docs/"
         },
         "theme": {
-          "customCss": "F:\\Infath\\refactor-builder-component\\stl-version\\v3\\docs\\src\\css\\custom.css"
+          "customCss": "F:\\vault\\MAJED\\shadow-dom-survey\\docs\\src\\css\\custom.css"
         }
       }
     ]

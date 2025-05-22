@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SKoRSA/shadow-dom-survey.git"
+    "url": "git+https://github.com/majed-r/shadow-dom-survey.git"
   },
   "bugs": {
-    "url": "https://github.com/SKoRSA/shadow-dom-survey/issues"
+    "url": "https://github.com/majed-r/shadow-dom-survey/issues"
   },
-  "homepage": "https://github.com/SKoRSA/shadow-dom-survey#readme",
+  "homepage": "https://github.com/majed-r/shadow-dom-survey#readme",
   "devDependencies": {
     "terser": "^5.16.1"
   }

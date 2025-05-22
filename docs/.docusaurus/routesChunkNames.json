@@ -1,58 +1,58 @@
 {
-  "/shadow-dom-survey/__docusaurus/debug-f97": {
+  "/shadow-dom-survey/__docusaurus/debug-357": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debugf-12-6ce"
     }
   },
-  "/shadow-dom-survey/__docusaurus/debug/config-e12": {
+  "/shadow-dom-survey/__docusaurus/debug/config-6b7": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debugf-12-6ce"
     }
   },
-  "/shadow-dom-survey/__docusaurus/debug/content-ccb": {
+  "/shadow-dom-survey/__docusaurus/debug/content-418": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debugf-12-6ce"
     },
     "allContent": "allContent---shadow-dom-survey-docusaurus-debug-content-246-43b"
   },
-  "/shadow-dom-survey/__docusaurus/debug/globalData-ec5": {
+  "/shadow-dom-survey/__docusaurus/debug/globalData-89d": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debugf-12-6ce"
     }
   },
-  "/shadow-dom-survey/__docusaurus/debug/metadata-a05": {
+  "/shadow-dom-survey/__docusaurus/debug/metadata-fc4": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debugf-12-6ce"
     }
   },
-  "/shadow-dom-survey/__docusaurus/debug/registry-aa4": {
+  "/shadow-dom-survey/__docusaurus/debug/registry-802": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debugf-12-6ce"
     }
   },
-  "/shadow-dom-survey/__docusaurus/debug/routes-beb": {
+  "/shadow-dom-survey/__docusaurus/debug/routes-479": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-docusaurus-debug-120-146"
+      "plugin": "plugin---shadow-dom-survey-docusaurus-debugf-12-6ce"
     }
   },
-  "/shadow-dom-survey/demo-04d": {
+  "/shadow-dom-survey/demo-189": {
     "__comp": "__comp---site-src-pages-demo-js-0-ba-09a",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-demo-3-e-2-d42"
+      "plugin": "plugin---shadow-dom-survey-demoe-48-bd7"
     },
     "config": "config---shadow-dom-survey-demo-5-e-9-ff8"
   },
-  "/shadow-dom-survey/docs-b4b": {
+  "/shadow-dom-survey/docs-eac": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-docsa-79-543"
+      "plugin": "plugin---shadow-dom-survey-docse-55-867"
     },
     "versionMetadata": "versionMetadata---shadow-dom-survey-docs-935-268"
   },
@@ -120,10 +120,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---shadow-dom-survey-docs-question-types-single-line-text-7-b-1-19f"
   },
-  "/shadow-dom-survey/-366": {
+  "/shadow-dom-survey/-22e": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "plugin---shadow-dom-survey-demo-3-e-2-d42"
+      "plugin": "plugin---shadow-dom-survey-demoe-48-bd7"
     },
     "config": "config---shadow-dom-survey-demo-5-e-9-ff8"
   }
